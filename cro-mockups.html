@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elior Watches CRO Mockups | Your Marketing Partners</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --teal:#00C49A; --gold:#c9a227; --ink:#111614; --paper:#ffffff;
+  --bg:#eef1ef; --line:#e4e7e5; --muted:#6c7a73;
+  --red:#e5484d; --green:#16a34a;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:'DM Sans',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:48px 32px 80px}
+.head{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+.diamond{width:18px;height:18px;background:var(--teal);clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
+.head .ymp{font-family:'Syne',sans-serif;font-size:11px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:var(--muted)}
+h1{font-family:'DM Serif Display',serif;font-size:38px;line-height:1.1;margin:10px 0 6px}
+.sub{color:var(--muted);font-size:15px;max-width:760px;margin-bottom:14px}
+.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-bottom:40px}
+.legend span{display:inline-flex;align-items:center;gap:7px}
+.chip{width:11px;height:11px;border-radius:3px;display:inline-block}
+.chip.r{background:var(--red)} .chip.g{background:var(--green)}
+
+.section{margin-bottom:64px}
+.section-tag{font-family:'Syne',sans-serif;font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--teal);margin-bottom:6px}
+.section h2{font-family:'DM Serif Display',serif;font-size:27px;margin-bottom:4px}
+.section .lead{color:var(--muted);font-size:14px;margin-bottom:28px;max-width:820px}
+
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.col-label{display:flex;align-items:center;gap:8px;margin-bottom:12px;font-family:'Syne',sans-serif;font-weight:700;font-size:12px;letter-spacing:1px;text-transform:uppercase}
+.col-label .tag{font-size:10px;font-weight:800;padding:3px 9px;border-radius:20px;letter-spacing:1px}
+.tag.before{background:rgba(229,72,77,.12);color:var(--red)}
+.tag.after{background:rgba(22,163,74,.12);color:var(--green)}
+
+/* phone / panel frame */
+.device{background:var(--paper);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.06)}
+.device.after{border-color:rgba(0,196,154,.4);box-shadow:0 10px 34px rgba(0,196,154,.12)}
+
+/* cart UI */
+.cart-top{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;border-bottom:1px solid var(--line)}
+.cart-top b{font-family:'DM Serif Display',serif;font-size:17px}
+.cart-x{color:var(--muted);font-size:16px}
+.urg{background:var(--red);color:#fff;text-align:center;font-size:11px;font-weight:700;padding:7px;letter-spacing:.3px}
+.urg.soft{background:#fbeaea;color:#b23;font-weight:600}
+.li{display:flex;gap:11px;padding:12px 16px;border-bottom:1px solid var(--line);align-items:center}
+.li .thumb{width:42px;height:42px;border-radius:8px;background:#222 url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"/>');flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#caa84e;font-size:9px;font-family:Syne}
+.li .nm{flex:1;font-size:13px;font-weight:600}
+.li .nm small{display:block;color:var(--muted);font-weight:400;font-size:11px}
+.li .pr{text-align:right;font-size:13px;font-weight:700}
+.li .pr s{display:block;color:#b9c0bb;font-weight:400;font-size:11px}
+.bump{display:flex;justify-content:space-between;align-items:center;padding:11px 16px;border-bottom:1px solid var(--line);font-size:12.5px}
+.bump .l{display:flex;gap:9px;align-items:center}
+.bump .ic{width:26px;height:26px;border-radius:6px;background:#f0efe7;display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:13px}
+.tg{width:34px;height:19px;border-radius:20px;position:relative;flex-shrink:0}
+.tg.on{background:#111} .tg.off{background:#cdd3cf}
+.tg::after{content:'';position:absolute;width:15px;height:15px;border-radius:50%;background:#fff;top:2px;transition:.2s}
+.tg.on::after{right:2px} .tg.off::after{left:2px}
+.testi{padding:11px 16px;border-bottom:1px solid var(--line);font-size:11.5px;color:#444;font-style:italic;display:flex;gap:9px;align-items:flex-start}
+.testi .av{width:26px;height:26px;border-radius:50%;background:linear-gradient(135deg,#c9a227,#8a6d12);flex-shrink:0}
+.totals{padding:12px 16px;font-size:13px}
+.totals .row{display:flex;justify-content:space-between;margin-bottom:4px}
+.totals .save{color:var(--green);font-weight:700}
+.totals .sub{font-weight:800;font-size:15px}
+.totals .sub s{color:#b9c0bb;font-weight:400;font-size:12px;margin-right:6px}
+.cta{margin:6px 16px 14px;background:#111;color:#fff;text-align:center;font-weight:700;padding:13px;border-radius:9px;font-size:14px;letter-spacing:.3px}
+.cta.big{padding:16px;font-size:15px;box-shadow:0 6px 18px rgba(0,0,0,.18)}
+.express-row{display:flex;gap:7px;margin:12px 16px 4px}
+.exp{flex:1;border-radius:8px;padding:9px;text-align:center;font-size:11px;font-weight:700;color:#fff}
+.exp.apple{background:#000} .exp.pp{background:#ffc439;color:#003087} .exp.shop{background:#5a31f4} .exp.klarna{background:#ffb3c7;color:#0a0a0a} .exp.gpay{background:#000}
+.or-line{text-align:center;color:var(--muted);font-size:10px;margin:8px 0;position:relative}
+.pays{display:flex;gap:5px;flex-wrap:wrap;padding:0 16px 14px}
+.pay{height:18px;min-width:28px;border:1px solid var(--line);border-radius:4px;background:#fafafa}
+
+/* annotation callouts */
+.notes{margin-top:16px;display:flex;flex-direction:column;gap:9px}
+.note{display:flex;gap:10px;align-items:flex-start;font-size:13px;line-height:1.5}
+.note .n{flex-shrink:0;width:20px;height:20px;border-radius:50%;color:#fff;font-family:'Syne',sans-serif;font-weight:800;font-size:11px;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.note.r .n{background:var(--red)} .note.g .n{background:var(--green)}
+.note b{color:var(--ink)}
+.note span{color:var(--muted)}
+
+/* checkout UI */
+.ck{padding:16px}
+.ck .brand{text-align:center;font-family:'DM Serif Display',serif;color:var(--gold);font-size:18px;letter-spacing:2px;margin-bottom:14px}
+.ck .lbl{font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin:14px 0 7px}
+.fld{border:1px solid var(--line);border-radius:8px;padding:10px 11px;font-size:12px;color:var(--muted);margin-bottom:8px}
+.fld.two{display:grid;grid-template-columns:1fr 1fr;gap:8px;border:0;padding:0}
+.fld.two .fld{margin:0}
+.ship-opt{display:flex;justify-content:space-between;border:1px solid var(--line);border-radius:8px;padding:10px 11px;font-size:12px;margin-bottom:7px}
+.ship-opt.sel{border-color:#2563eb;background:#f5f8ff}
+.trust{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 4px}
+.trust .t{font-size:10px;font-weight:600;color:#3a4a42;background:#eef4f1;border:1px solid #dceae3;border-radius:20px;padding:4px 9px}
+.review{background:#2563eb;color:#fff;text-align:center;font-weight:700;padding:13px;border-radius:9px;font-size:14px;margin-top:12px}
+
+@media(max-width:820px){.compare{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="head"><span class="diamond"></span><span class="ymp">Your Marketing Partners</span></div>
+  <h1>Elior Watches: CRO Mockups</h1>
+  <p class="sub">Before and after concepts for the cart drawer and the checkout, built to lift the two stages where the funnel leaks: add to cart to checkout at 25.7 percent, and checkout completion at 39.3 percent. These are repositioning and clarity changes, not a rebuild. Shipping protection stays in the cart given its strong take rate.</p>
+  <div class="legend">
+    <span><span class="chip r"></span> Current, where attention or trust leaks</span>
+    <span><span class="chip g"></span> Proposed change</span>
+  </div>
+
+  <!-- CART -->
+  <div class="section">
+    <div class="section-tag">Fix One</div>
+    <h2>The Cart Drawer</h2>
+    <p class="lead">The drawer is well stocked. The issue is that several decisions sit above the checkout button, so the eye reaches Secure Checkout last. We make checkout the clear primary action, add a one-tap express row, keep the high-performing shipping protection, move the lower-take case bump to a post-purchase offer, and simplify the duplicated savings lines.</p>
+    <div class="compare">
+      <!-- BEFORE -->
+      <div>
+        <div class="col-label"><span class="tag before">Before</span> Current cart</div>
+        <div class="device">
+          <div class="cart-top"><b>Cart, 3 items</b><span class="cart-x">&times;</span></div>
+          <div class="urg">Cart reserved for 04:40</div>
+          <div class="li"><div class="thumb">EW</div><div class="nm">Deus Vult<small>1 watch</small></div><div class="pr">$164.99<s>$365.00</s></div></div>
+          <div class="li"><div class="thumb">TOOL</div><div class="nm">Free Bracelet Tool<small>Included</small></div><div class="pr">$0.00<s>$5.00</s></div></div>
+          <div class="testi"><div class="av"></div>"Bought it for my husband for Christmas. He absolutely loves it." Sarah T., verified buyer</div>
+          <div class="bump"><div class="l"><div class="ic">&#128666;</div><div>Shipping Protection<br><span style="color:var(--muted);font-size:10px">Damage, loss and theft</span></div></div><div style="display:flex;gap:8px;align-items:center"><b>$9.99</b><span class="tg on"></span></div></div>
+          <div class="bump"><div class="l"><div class="ic">&#128230;</div><div>Premium Watch Case</div></div><div style="display:flex;gap:8px;align-items:center"><b>$15.99</b><span class="tg off"></span></div></div>
+          <div class="totals">
+            <div class="row save"><span>Savings</span><span>-$200.01</span></div>
+            <div class="row sub"><span>Subtotal</span><span><s>$385.99</s> $174.98</span></div>
+          </div>
+          <div class="cta">Secure Checkout</div>
+          <div class="pays"><span class="pay"></span><span class="pay"></span><span class="pay"></span><span class="pay"></span><span class="pay"></span><span class="pay"></span></div>
+        </div>
+        <div class="notes">
+          <div class="note r"><span class="n">1</span><div><b>Checkout button sits last,</b> <span>below five other elements. On mobile it can fall under the fold.</span></div></div>
+          <div class="note r"><span class="n">2</span><div><b>No one-tap express option</b> <span>inside the drawer, so high-intent buyers load a full checkout to pay.</span></div></div>
+          <div class="note r"><span class="n">3</span><div><b>Two savings lines</b> <span>(the line item strike and the savings row) repeat the same message and add noise.</span></div></div>
+          <div class="note r"><span class="n">4</span><div><b>Two upsell toggles plus a testimonial</b> <span>stack above the button and add decisions before checkout.</span></div></div>
+        </div>
+      </div>
+      <!-- AFTER -->
+      <div>
+        <div class="col-label"><span class="tag after">After</span> Proposed cart</div>
+        <div class="device after">
+          <div class="cart-top"><b>Cart, 2 items</b><span class="cart-x">&times;</span></div>
+          <div class="urg soft">Reserved for 5:00, free returns included</div>
+          <div class="li"><div class="thumb">EW</div><div class="nm">Deus Vult<small>1 watch, save $200</small></div><div class="pr">$164.99<s>$365.00</s></div></div>
+          <div class="li"><div class="thumb">TOOL</div><div class="nm">Free Bracelet Tool<small>Included</small></div><div class="pr">$0.00</div></div>
+          <div class="bump"><div class="l"><div class="ic">&#128666;</div><div>Shipping Protection<br><span style="color:var(--muted);font-size:10px">Kept, strong take rate</span></div></div><div style="display:flex;gap:8px;align-items:center"><b>$9.99</b><span class="tg on"></span></div></div>
+          <div class="totals">
+            <div class="row sub"><span>Subtotal</span><span><s>$385.99</s> $174.98</span></div>
+            <div class="row save" style="font-size:12px"><span>You save</span><span>$200.01</span></div>
+          </div>
+          <div class="express-row">
+            <span class="exp apple">&#63743; Pay</span><span class="exp pp">PayPal</span><span class="exp shop">shop</span>
+          </div>
+          <div class="or-line">or</div>
+          <div class="cta big">Secure Checkout &#128274;</div>
+          <div class="testi" style="border-top:1px solid var(--line);border-bottom:0"><div class="av"></div>"He absolutely loves it." Sarah T. &nbsp; 4.6 from 7,000 plus believers</div>
+        </div>
+        <div class="notes">
+          <div class="note g"><span class="n">1</span><div><b>Secure Checkout is now the dominant action,</b> <span>larger and pinned so it is always the obvious next step.</span></div></div>
+          <div class="note g"><span class="n">2</span><div><b>Express row added in the drawer.</b> <span>Apple Pay, PayPal and Shop Pay for one-tap purchase without loading checkout.</span></div></div>
+          <div class="note g"><span class="n">3</span><div><b>One clear savings line</b> <span>and a single subtotal. Same offer, less noise.</span></div></div>
+          <div class="note g"><span class="n">4</span><div><b>Protection stays,</b> <span>case bump moves to a post-purchase one-click offer, and the proof line sits under the button as reassurance.</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHECKOUT -->
+  <div class="section">
+    <div class="section-tag">Fix Two</div>
+    <h2>The Checkout</h2>
+    <p class="lead">Checkout completion at 39.3 percent is the single highest-value fix on the store. PayPal already shows as express in the US. The changes here are adding Klarna as express, giving the phone field a reason, and adding a trust row by the total so reassurance lands at the moment of payment.</p>
+    <div class="compare">
+      <!-- BEFORE -->
+      <div>
+        <div class="col-label"><span class="tag before">Before</span> Current checkout</div>
+        <div class="device">
+          <div class="ck">
+            <div class="brand">&#10013; ELIOR</div>
+            <div class="lbl">Express checkout</div>
+            <div class="express-row" style="margin:0 0 4px"><span class="exp shop">shop</span><span class="exp gpay">G Pay</span><span class="exp pp">PayPal</span></div>
+            <div class="lbl">Contact</div>
+            <div class="fld">Email</div>
+            <div class="lbl">Delivery</div>
+            <div class="fld two"><div class="fld">First name</div><div class="fld">Last name</div></div>
+            <div class="fld">Address</div>
+            <div class="fld">Phone (optional)</div>
+            <div class="lbl">Shipping method</div>
+            <div class="ship-opt sel"><span>Standard Tracked</span><b>$5.99</b></div>
+            <div class="ship-opt"><span>Express Tracked</span><b>$23.99</b></div>
+            <div class="review">Review order</div>
+          </div>
+        </div>
+        <div class="notes">
+          <div class="note r"><span class="n">1</span><div><b>Klarna is not an express option,</b> <span>it only appears at the card step, so pay-later intent is lost up top.</span></div></div>
+          <div class="note r"><span class="n">2</span><div><b>Phone is optional with no reason,</b> <span>which loses the number needed for SMS abandoned-cart recovery.</span></div></div>
+          <div class="note r"><span class="n">3</span><div><b>No trust signals near the total,</b> <span>so warranty, returns and security are not reinforced at the point of payment.</span></div></div>
+        </div>
+      </div>
+      <!-- AFTER -->
+      <div>
+        <div class="col-label"><span class="tag after">After</span> Proposed checkout</div>
+        <div class="device after">
+          <div class="ck">
+            <div class="brand">&#10013; ELIOR</div>
+            <div class="lbl">Express checkout</div>
+            <div class="express-row" style="margin:0 0 4px"><span class="exp shop">shop</span><span class="exp gpay">G Pay</span><span class="exp pp">PayPal</span><span class="exp klarna">Klarna</span></div>
+            <div class="lbl">Contact</div>
+            <div class="fld">Email</div>
+            <div class="lbl">Delivery</div>
+            <div class="fld two"><div class="fld">First name</div><div class="fld">Last name</div></div>
+            <div class="fld">Address</div>
+            <div class="fld">Phone, for delivery updates</div>
+            <div class="lbl">Shipping method</div>
+            <div class="ship-opt sel"><span>Standard Tracked</span><b>$5.99</b></div>
+            <div class="trust"><span class="t">&#10003; 1-Year Warranty</span><span class="t">&#10003; 30-Day Returns</span><span class="t">&#128274; Secure &amp; Encrypted</span><span class="t">&#128666; Tracked Shipping</span></div>
+            <div class="review">Review order</div>
+          </div>
+        </div>
+        <div class="notes">
+          <div class="note g"><span class="n">1</span><div><b>Klarna added as express,</b> <span>alongside the PayPal, Shop Pay and Google Pay that already show in the US.</span></div></div>
+          <div class="note g"><span class="n">2</span><div><b>Phone field given a reason,</b> <span>for delivery updates, which lifts completion rate and captures the number for recovery flows.</span></div></div>
+          <div class="note g"><span class="n">3</span><div><b>Trust row by the total.</b> <span>Warranty, returns, security and tracked shipping reinforced exactly where hesitation happens.</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="border-top:1px solid var(--line);padding-top:20px;text-align:center;color:var(--muted);font-size:12px">
+    <span class="diamond" style="display:inline-block;vertical-align:middle;margin-right:8px"></span>
+    Prepared by Your Marketing Partners &nbsp;|&nbsp; Elior Watches CRO Mockups &nbsp;|&nbsp; 1 June 2026
+  </div>
+</div>
+</body>
+</html>
