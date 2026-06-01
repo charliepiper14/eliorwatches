@@ -204,6 +204,17 @@ ul.check-list.num li::before { content: counter(lc); counter-increment: lc; font
 .phone-cta { padding: 8px 12px; background: rgba(0,0,0,0.5); display: flex; justify-content: space-between; align-items: center; }
 .phone-cta-l { font-size: 9px; color: var(--muted); }
 .phone-cta-btn { background: var(--white); color: #000; font-size: 9px; font-weight: 700; padding: 4px 10px; border-radius: 4px; }
+.ad-card { background: var(--surface2); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; position: sticky; top: 76px; }
+.ad-chrome { padding: 13px 16px 0; display: flex; align-items: center; gap: 10px; }
+.ad-primary { padding: 10px 16px 12px; font-size: 12.5px; line-height: 1.55; color: #c4d2cb; }
+.ad-video-frame { position: relative; width: 100%; max-width: 300px; margin: 2px auto 14px; aspect-ratio: 9 / 16; background: #000; border-radius: 8px; overflow: hidden; }
+.ad-video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; display: block; }
+.ad-cta { padding: 10px 16px; background: rgba(0,0,0,0.35); display: flex; justify-content: space-between; align-items: center; }
+.ad-cta-l { font-size: 11px; color: var(--muted); line-height: 1.4; }
+.ad-cta-l strong { color: var(--text); }
+.ad-cta-btn { background: var(--white); color: #000; font-size: 11px; font-weight: 700; padding: 6px 14px; border-radius: 5px; }
+.ad-engagement { padding: 9px 16px; border-top: 1px solid var(--border); font-size: 11px; color: var(--muted2); display: flex; gap: 14px; }
+.ad-engagement b { color: var(--teal); font-weight: 700; }
 
 .beat-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
 .beat-list li { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 16px; font-size: 13px; color: var(--muted); display: flex; gap: 14px; align-items: flex-start; }
@@ -592,39 +603,36 @@ ul.check-list.num li::before { content: counter(lc); counter-increment: lc; font
 <!-- ANATOMY -->
 <section id="anatomy">
   <div class="eyebrow">Winning Ad Anatomy</div>
-  <h2>Inside the Best Ad in the Account</h2>
-  <p style="max-width:760px;margin-bottom:36px;">This is the conviction voiceover that built the account, the Faith On Your Wrist cut. It earned the highest engagement in the library at roughly 11,000 reactions, 294 comments and 448 shares, and its sibling cut drove a 2.77x return at a 67 dollar cost per purchase. Decoded into beats, it becomes a repeatable template rather than a lucky one-off.</p>
+  <h2>Inside a Top-Performing Reel</h2>
+  <p style="max-width:760px;margin-bottom:36px;">This is the flagship skeptic-reframe showcase, the More Than A Watch cut, and one of the most shared ads in the library at roughly 8,100 reactions, 77 comments and 102 shares. It belongs to the reframe-and-offer engine: name the doubt out loud in the first second, then spend the next twenty seconds disproving it with the product line. Press play, then read it as beats and it becomes a repeatable template rather than a lucky one-off.</p>
 
-  <div class="anatomy-wrap">
-    <div class="phone-mock">
-      <div class="phone-screen">
-        <div class="phone-header">
-          <div class="phone-avatar">EW</div>
-          <div class="phone-name">Elior Watches<span>Sponsored</span></div>
-        </div>
-        <div class="phone-body">The world tells you to blend in. We build for the ones who will not.</div>
-        <div class="phone-video">
-          <div style="position:absolute;top:8px;right:10px;font-family:'Syne',sans-serif;font-size:9px;color:var(--teal);letter-spacing:1px;">0:46</div>
-          <div style="font-family:'DM Serif Display',serif;font-size:16px;color:#fff;line-height:1.2;">Faith on<br>your wrist.</div>
-        </div>
-        <div class="phone-cta">
-          <div class="phone-cta-l">eliorwatches.com<br>Father's Day, 55% off</div>
-          <div class="phone-cta-btn">Shop Now</div>
-        </div>
+  <div class="anatomy-wrap" style="grid-template-columns: minmax(0,0.92fr) minmax(0,1.08fr);">
+    <div class="ad-card">
+      <div class="ad-chrome">
+        <div class="phone-avatar">EW</div>
+        <div class="phone-name">Elior Watches<span>Sponsored</span></div>
       </div>
+      <div class="ad-primary">A Christian watch made with intention, designed to keep your faith close every day. Built for men who walk boldly in Christ.</div>
+      <div class="ad-video-frame">
+        <iframe src="https://player.cloudinary.com/embed/?cloud_name=dcnabm5nc&public_id=Screen_Recording_2026-06-01_at_15.28.52_ggdfcb" allow="autoplay; fullscreen; encrypted-media; picture-in-picture" allowfullscreen frameborder="0"></iframe>
+      </div>
+      <div class="ad-cta">
+        <div class="ad-cta-l">eliorwatches.com<br><strong>More Than A Watch</strong></div>
+        <div class="ad-cta-btn">Shop Now</div>
+      </div>
+      <div class="ad-engagement"><span><b>8.1K</b> reactions</span><span><b>77</b> comments</span><span><b>102</b> shares</span></div>
     </div>
     <div>
       <ul class="beat-list">
-        <li><span class="beat-time">0:00</span><div class="beat-body"><strong>Cultural Tension Cold Open</strong>A line that names the values clash head on. It is divisive on purpose and that is what drives the 63 percent hook. The lesson is the pattern, a sharp belief-led opener, not the specific target.</div></li>
-        <li><span class="beat-time">0:05</span><div class="beat-body"><strong>The Contrast</strong>Sets the noisy outside world against a quiet, grounded identity. The viewer is asked to pick a side, and the brand has already chosen theirs.</div></li>
-        <li><span class="beat-time">0:14</span><div class="beat-body"><strong>The Pivot, Meanwhile We Build</strong>Turns from commentary to craft. This is the hinge that converts an opinion video into a product video, and it is exactly where the current cut loses too many viewers.</div></li>
-        <li><span class="beat-time">0:20</span><div class="beat-body"><strong>Craftsmanship Demo</strong>Molten metal, the movement in macro, the bracelet articulating. This is the proof layer that answers the is-it-real question without saying a word.</div></li>
-        <li><span class="beat-time">0:30</span><div class="beat-body"><strong>Product Hero</strong>The dial fills the frame. Crown of Thorns, the cross index, the fluted bezel. Desire is built here.</div></li>
-        <li><span class="beat-time">0:38</span><div class="beat-body"><strong>Identity Payoff</strong>Faith on your wrist. The watch is reframed as a daily statement of who you are, not a fashion item.</div></li>
-        <li><span class="beat-time">0:44</span><div class="beat-body"><strong>Endcard and Offer</strong>Elior logo, Father's Day 55 percent off, clear shop prompt. Urgency and brand land together.</div></li>
+        <li><span class="beat-time">0:00</span><div class="beat-body"><strong>Objection-First Hook</strong>Opens by voicing the exact cynicism a cold viewer feels, that it is just a Jesus watch, over a hand opening a leather travel case. Naming the doubt out loud disarms it and earns the product a fair look. This is the asset that makes the reel work.</div></li>
+        <li><span class="beat-time">0:05</span><div class="beat-body"><strong>Crown of Thorns Reveal</strong>The case opens to the blue-dial Crown of Thorns. The first that-actually-looks-good beat, overturning the hook with the product itself rather than a claim.</div></li>
+        <li><span class="beat-time">0:09</span><div class="beat-body"><strong>John 14:6 in Hand</strong>A second model handled on camera, building the sense of a real range rather than a one-off novelty.</div></li>
+        <li><span class="beat-time">0:13</span><div class="beat-body"><strong>Chi-Rho on the Wrist</strong>A third design worn, showing fit and scale and that it reads as a proper dress watch, not a gimmick.</div></li>
+        <li><span class="beat-time">0:17</span><div class="beat-body"><strong>Deus Vult Hero</strong>The black and gold cross dial, the most striking design in the line, carries the desire peak just before the call to action.</div></li>
+        <li><span class="beat-time">0:21</span><div class="beat-body"><strong>Endcard and Offer</strong>Elior logo, 75 percent off plus 30 days money back, clear shop prompt. Urgency and guarantee land together to close.</div></li>
       </ul>
       <div class="highlight" style="margin-top:18px;">
-        <strong>The single highest-leverage edit:</strong> pull the craftsmanship demo and a flash of the product hero into the first five seconds. The hook is already elite at 63 percent, but the 17 percent average hold says the proof arrives too late. Front-loading the watch should lift hold, carry more of the earned attention into the offer, and raise the bucket ROAS without changing spend or audience.
+        <strong>The single highest-leverage edit:</strong> this reel shows five designs in twenty-two seconds, so no single watch gets the room to build desire. Give the best-converting design, Deus Vult or Crown of Thorns, a longer hero beat and pull the offer card in a beat earlier. The objection-first hook is the proven asset, so protect it and let one product close rather than a fast five-model carousel.
       </div>
     </div>
   </div>
