@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elior Watches Meta Ads Scale Audit | Your Marketing Partners</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300;1,9..40,400&family=DM+Serif+Display:ital@0;1&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --teal: #00C49A;
+  --teal-dim: rgba(0,196,154,0.12);
+  --teal-border: rgba(0,196,154,0.22);
+  --bg: #080d0b;
+  --bg2: #0c1410;
+  --surface: #111a15;
+  --surface2: #172119;
+  --border: rgba(255,255,255,0.06);
+  --text: #e6ede9;
+  --muted: #6b8a77;
+  --muted2: #4a6357;
+  --red: #ff4d4d;
+  --amber: #f5a623;
+  --green: #00e676;
+  --white: #ffffff;
+  --gold: #c9a227;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--teal); border-radius: 2px; }
+
+.topnav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(8,13,11,0.92); backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+  padding: 0 40px; height: 56px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.nav-brand { display: flex; align-items: center; gap: 10px; }
+.nav-diamond { width: 20px; height: 20px; background: var(--teal); clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); flex-shrink: 0; }
+.nav-name { font-family: 'Syne', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--muted); }
+.nav-links { display: flex; gap: 6px; flex-wrap: wrap; }
+.nav-link { font-size: 11px; font-weight: 500; color: var(--muted); text-decoration: none; padding: 4px 10px; border-radius: 20px; transition: all 0.2s; border: 1px solid transparent; white-space: nowrap; }
+.nav-link:hover { color: var(--teal); border-color: var(--teal-border); background: var(--teal-dim); }
+.nav-link.active { color: var(--teal); background: var(--teal-dim); border-color: var(--teal-border); }
+
+.page { padding-top: 56px; }
+section { max-width: 1120px; margin: 0 auto; padding: 80px 40px; }
+section + section { border-top: 1px solid var(--border); }
+
+.eyebrow { font-family: 'Syne', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; color: var(--teal); margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+.eyebrow::before { content: ''; display: block; width: 28px; height: 1px; background: var(--teal); flex-shrink: 0; }
+
+h1, h2, h3, h4 { font-family: 'DM Serif Display', serif; font-weight: 400; line-height: 1.15; }
+h1 { font-size: clamp(44px, 6vw, 72px); color: var(--white); }
+h2 { font-size: clamp(30px, 4vw, 44px); color: var(--white); margin-bottom: 40px; }
+h3 { font-size: 22px; color: var(--white); margin-bottom: 16px; }
+h4 { font-family: 'Syne', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--teal); margin-bottom: 12px; }
+p { color: var(--muted); line-height: 1.8; }
+p + p { margin-top: 12px; }
+strong { color: var(--text); font-weight: 600; }
+
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 28px 32px; }
+.card.teal { border-color: var(--teal-border); background: rgba(0,196,154,0.04); }
+.card.red { border-color: rgba(255,77,77,0.25); background: rgba(255,77,77,0.03); }
+.card.amber { border-color: rgba(245,166,35,0.25); background: rgba(245,166,35,0.03); }
+.card.green { border-color: rgba(0,230,118,0.2); background: rgba(0,230,118,0.02); }
+
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+
+.stat-box { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 22px 24px; }
+.stat-val { font-family: 'DM Serif Display', serif; font-size: 36px; color: var(--white); line-height: 1; margin-bottom: 4px; }
+.stat-val.t { color: var(--teal); }
+.stat-val.r { color: var(--red); }
+.stat-val.a { color: var(--amber); }
+.stat-val.g { color: var(--green); }
+.stat-label { font-size: 11px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); }
+.stat-sub { font-size: 12px; color: var(--muted2); margin-top: 4px; }
+
+.badge { display: inline-flex; align-items: center; gap: 5px; padding: 3px 10px; border-radius: 20px; font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+.badge.critical { background: rgba(255,77,77,0.15); color: var(--red); }
+.badge.high { background: rgba(245,166,35,0.15); color: var(--amber); }
+.badge.medium { background: rgba(0,196,154,0.12); color: var(--teal); }
+.badge.good { background: rgba(0,230,118,0.12); color: var(--green); }
+.badge .dot { width: 5px; height: 5px; border-radius: 50%; background: currentColor; }
+.badge.pulse .dot { animation: pulse 1.5s infinite; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+.data-table { width: 100%; border-collapse: collapse; }
+.data-table th { font-family: 'Syne', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); padding: 10px 14px; border-bottom: 1px solid var(--border); text-align: left; }
+.data-table td { padding: 11px 14px; font-size: 13px; color: var(--text); border-bottom: 1px solid rgba(255,255,255,0.03); vertical-align: middle; }
+.data-table tbody tr:last-child td { border-bottom: none; }
+.data-table tbody tr:hover td { background: rgba(255,255,255,0.02); }
+.data-table .good { color: var(--green); font-weight: 600; }
+.data-table .bad { color: var(--red); font-weight: 600; }
+.data-table .ok { color: var(--amber); font-weight: 600; }
+.data-table .dim { color: var(--muted); }
+.roas-pill { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 700; }
+.roas-g { background: rgba(0,230,118,0.12); color: var(--green); }
+.roas-a { background: rgba(245,166,35,0.15); color: var(--amber); }
+.roas-r { background: rgba(255,77,77,0.12); color: var(--red); }
+
+ul.check-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+ul.check-list li { padding-left: 20px; position: relative; font-size: 13px; color: var(--muted); line-height: 1.6; }
+ul.check-list li::before { content: '>'; position: absolute; left: 0; color: var(--teal); font-size: 12px; }
+ul.check-list li strong { color: var(--text); }
+ul.check-list.red li::before { color: var(--red); content: 'x'; }
+ul.check-list.amber li::before { color: var(--amber); content: '!'; }
+ul.check-list.green li::before { color: var(--green); content: '+'; }
+ul.check-list.num { counter-reset: lc; }
+ul.check-list.num li::before { content: counter(lc); counter-increment: lc; font-family: 'Syne',sans-serif; font-size: 10px; font-weight: 800; width: 16px; height: 16px; background: var(--teal); color: #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; top: 2px; }
+
+.divider { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
+
+.highlight { background: var(--teal-dim); border-left: 3px solid var(--teal); border-radius: 0 8px 8px 0; padding: 16px 20px; font-size: 13px; color: var(--muted); line-height: 1.7; }
+.highlight strong { color: var(--text); }
+.highlight.red { background: rgba(255,77,77,0.06); border-color: var(--red); }
+.highlight.amber { background: rgba(245,166,35,0.06); border-color: var(--amber); }
+
+.timeline { position: relative; padding-left: 32px; }
+.timeline::before { content: ''; position: absolute; left: 8px; top: 6px; bottom: 0; width: 1px; background: linear-gradient(180deg, var(--teal) 0%, transparent 100%); }
+.tl-item { position: relative; padding-bottom: 28px; }
+.tl-item:last-child { padding-bottom: 0; }
+.tl-dot { position: absolute; left: -28px; top: 4px; width: 16px; height: 16px; border-radius: 50%; border: 2px solid var(--teal); background: var(--bg); display: flex; align-items: center; justify-content: center; }
+.tl-dot.active { background: rgba(0,196,154,0.2); animation: tl-pulse 2s infinite; }
+@keyframes tl-pulse { 0%,100%{box-shadow:0 0 0 0 rgba(0,196,154,0.4)} 50%{box-shadow:0 0 0 5px rgba(0,196,154,0)} }
+.tl-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 6px; }
+.tl-title { font-family: 'Syne', sans-serif; font-size: 13px; font-weight: 700; color: var(--white); text-transform: uppercase; letter-spacing: 0.5px; }
+.tl-status { font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 2px 8px; border-radius: 10px; white-space: nowrap; flex-shrink: 0; }
+.tl-status.done { background: rgba(0,230,118,0.12); color: var(--green); }
+.tl-status.active { background: rgba(245,166,35,0.15); color: var(--amber); }
+.tl-status.pending { background: var(--surface); color: var(--muted); }
+.tl-body { font-size: 13px; color: var(--muted); line-height: 1.6; }
+.tl-body strong { color: var(--text); }
+
+#cover { min-height: calc(100vh - 56px); display: flex; align-items: center; position: relative; overflow: hidden; padding-top: 80px; padding-bottom: 80px; border-top: none; }
+#cover::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 70% at 80% 40%, rgba(0,196,154,0.07) 0%, transparent 70%), radial-gradient(ellipse 30% 40% at 10% 80%, rgba(0,196,154,0.04) 0%, transparent 60%); pointer-events: none; }
+#cover .grid-bg { position: absolute; inset: 0; background-image: linear-gradient(rgba(0,196,154,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(0,196,154,0.025) 1px, transparent 1px); background-size: 64px 64px; pointer-events: none; }
+.cover-content { position: relative; z-index: 2; max-width: 760px; }
+.cover-meta { display: flex; gap: 40px; margin-top: 52px; padding-top: 40px; border-top: 1px solid var(--border); flex-wrap: wrap; }
+.cover-meta-item { display: flex; flex-direction: column; gap: 3px; }
+.cover-meta-label { font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--muted2); }
+.cover-meta-val { font-family: 'Syne', sans-serif; font-size: 14px; font-weight: 600; color: var(--text); }
+.cover-bg-text { position: absolute; right: -20px; bottom: -40px; font-family: 'DM Serif Display', serif; font-size: 220px; color: rgba(0,196,154,0.04); line-height: 1; pointer-events: none; user-select: none; z-index: 1; }
+.status-row { display: flex; gap: 10px; margin-top: 24px; flex-wrap: wrap; }
+
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.two-col.asym { grid-template-columns: 1.4fr 0.6fr; }
+.two-col.asym-r { grid-template-columns: 0.6fr 1.4fr; }
+
+.phase-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.phase-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 24px 22px; }
+.phase-card.active { border-color: var(--teal-border); background: rgba(0,196,154,0.03); }
+.phase-num { font-family: 'DM Serif Display', serif; font-size: 48px; color: var(--teal); opacity: 0.18; line-height: 1; margin-bottom: 4px; }
+.phase-tag { font-family: 'Syne', sans-serif; font-size: 10px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: #000; background: var(--teal); padding: 3px 8px; border-radius: 4px; display: inline-block; margin-bottom: 10px; }
+.phase-tag.p2 { background: var(--amber); }
+.phase-tag.p3 { background: transparent; color: var(--teal); border: 1px solid var(--teal-border); }
+.phase-title { font-family: 'Syne', sans-serif; font-size: 14px; font-weight: 800; text-transform: uppercase; color: var(--white); margin-bottom: 4px; letter-spacing: 0.3px; }
+.phase-timeline { font-size: 11px; color: var(--muted2); margin-bottom: 16px; }
+.phase-kpi { font-size: 11px; color: var(--teal); font-weight: 600; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--border); }
+
+.funnel-viz { display: flex; flex-direction: column; gap: 0; align-items: stretch; max-width: 480px; }
+.funnel-step { padding: 14px 20px; display: flex; justify-content: space-between; align-items: center; position: relative; }
+.funnel-step::after { content: 'v'; position: absolute; bottom: -14px; left: 50%; transform: translateX(-50%); color: var(--muted2); font-size: 12px; z-index: 2; }
+.funnel-step:last-child::after { display: none; }
+.funnel-label { font-family: 'Syne', sans-serif; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text); }
+.funnel-num { font-family: 'DM Serif Display', serif; font-size: 28px; line-height: 1; }
+.funnel-rate { font-size: 11px; color: var(--muted); margin-top: 2px; }
+.funnel-gap { height: 20px; }
+
+.opp-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+
+.concept-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.concept-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 22px 24px; }
+.concept-card.featured { border-color: var(--teal-border); background: rgba(0,196,154,0.03); }
+.concept-tag { font-family: 'Syne', sans-serif; font-size: 10px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: var(--teal); background: var(--teal-dim); padding: 3px 8px; border-radius: 4px; display: inline-block; margin-bottom: 10px; }
+.concept-h { font-family: 'Syne', sans-serif; font-size: 14px; font-weight: 800; color: var(--white); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.concept-hook { font-family: 'DM Serif Display', serif; font-style: italic; font-size: 16px; color: var(--white); margin: 12px 0; padding: 10px 14px; background: rgba(0,196,154,0.04); border-left: 2px solid var(--teal); border-radius: 0 6px 6px 0; }
+.concept-meta { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; font-size: 11px; color: var(--muted2); }
+.concept-meta span { padding: 2px 8px; background: var(--surface2); border-radius: 10px; }
+
+.anatomy-wrap { display: grid; grid-template-columns: 0.5fr 1.5fr; gap: 32px; align-items: start; }
+.phone-mock { background: var(--surface2); border-radius: 24px; padding: 16px; border: 1px solid var(--border); }
+.phone-screen { background: #1a1a1a; border-radius: 14px; height: 480px; position: relative; overflow: hidden; display: flex; flex-direction: column; }
+.phone-header { padding: 10px 12px; display: flex; align-items: center; gap: 8px; background: rgba(0,0,0,0.4); }
+.phone-avatar { width: 22px; height: 22px; background: var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Syne',sans-serif; font-size: 9px; font-weight: 800; color: #000; }
+.phone-name { font-family: 'Syne',sans-serif; font-size: 10px; font-weight: 700; color: var(--white); }
+.phone-name span { display: block; font-size: 8px; color: var(--muted); font-weight: 400; }
+.phone-body { padding: 10px 12px; font-size: 9px; line-height: 1.4; color: #c4d2cb; flex-shrink: 0; }
+.phone-video { flex: 1; background: linear-gradient(180deg, #20242a 0%, #2c333d 50%, #16191e 100%); position: relative; display: flex; align-items: flex-end; padding: 10px; }
+.hook-label { background: #111; color: #fff; font-family: 'Syne',sans-serif; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; padding: 5px 9px; display: inline-block; border-left: 3px solid var(--gold); }
+.phone-cta { padding: 8px 12px; background: rgba(0,0,0,0.5); display: flex; justify-content: space-between; align-items: center; }
+.phone-cta-l { font-size: 9px; color: var(--muted); }
+.phone-cta-btn { background: var(--white); color: #000; font-size: 9px; font-weight: 700; padding: 4px 10px; border-radius: 4px; }
+
+.beat-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.beat-list li { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 16px; font-size: 13px; color: var(--muted); display: flex; gap: 14px; align-items: flex-start; }
+.beat-time { font-family: 'Syne',sans-serif; font-size: 10px; font-weight: 800; color: var(--teal); background: var(--teal-dim); padding: 2px 8px; border-radius: 4px; flex-shrink: 0; margin-top: 2px; letter-spacing: 1px; }
+.beat-body { flex: 1; }
+.beat-body strong { color: var(--text); font-family: 'Syne',sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; display: block; margin-bottom: 2px; }
+
+.fix-row { display: flex; gap: 14px; align-items: flex-start; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.03); }
+.fix-row:last-child { border-bottom: none; }
+.fix-tag { font-family: 'Syne', sans-serif; font-size: 9px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; padding: 3px 8px; border-radius: 4px; white-space: nowrap; flex-shrink: 0; margin-top: 2px; }
+.fix-tag.now { background: rgba(255,77,77,0.2); color: var(--red); }
+.fix-tag.week { background: rgba(245,166,35,0.15); color: var(--amber); }
+.fix-tag.month { background: rgba(0,196,154,0.1); color: var(--teal); }
+.fix-text { font-size: 13px; color: var(--muted); line-height: 1.6; }
+.fix-text strong { color: var(--text); }
+
+.comp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.comp-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 24px 26px; }
+.comp-card.direct { border-color: rgba(245,166,35,0.3); background: rgba(245,166,35,0.03); }
+.comp-card.premium { border-color: var(--teal-border); background: rgba(0,196,154,0.03); }
+.comp-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 6px; }
+.comp-name { font-family: 'Syne', sans-serif; font-size: 16px; font-weight: 800; color: var(--white); }
+.comp-price { font-family: 'DM Serif Display', serif; font-size: 22px; color: var(--teal); line-height: 1; white-space: nowrap; }
+.comp-url { font-size: 11px; color: var(--muted2); margin-bottom: 14px; }
+
+.verdict { background: linear-gradient(135deg, rgba(0,196,154,0.07) 0%, rgba(0,196,154,0.02) 100%); border: 1px solid var(--teal-border); border-radius: 12px; padding: 28px 32px; display: flex; gap: 20px; align-items: flex-start; }
+.verdict-icon { font-size: 28px; flex-shrink: 0; margin-top: 2px; color: var(--teal); font-family:'Syne',sans-serif; font-weight:800; }
+.verdict-body h3 { font-family: 'Syne', sans-serif; font-size: 14px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; color: var(--teal); margin-bottom: 8px; }
+.verdict-body p { font-size: 14px; color: var(--muted); line-height: 1.7; }
+.verdict-body p strong { color: var(--text); }
+
+@media (max-width: 768px) {
+  .grid-2, .grid-3, .grid-4, .two-col, .two-col.asym, .two-col.asym-r, .phase-row, .opp-grid, .concept-grid, .comp-grid, .anatomy-wrap { grid-template-columns: 1fr; }
+  section { padding: 60px 20px; }
+  .topnav { padding: 0 20px; }
+  .nav-links { display: none; }
+  .cover-bg-text { display: none; }
+}
+</style>
+</head>
+<body>
+
+<nav class="topnav" id="topnav">
+  <div class="nav-brand">
+    <div class="nav-diamond"></div>
+    <span class="nav-name">Your Marketing Partners</span>
+  </div>
+  <div class="nav-links">
+    <a href="#cover" class="nav-link">Overview</a>
+    <a href="#snapshot" class="nav-link">Snapshot</a>
+    <a href="#trajectory" class="nav-link">Trajectory</a>
+    <a href="#tracking" class="nav-link">Tracking</a>
+    <a href="#funnel" class="nav-link">Funnel</a>
+    <a href="#cro" class="nav-link">CRO</a>
+    <a href="#creatives" class="nav-link">Creatives</a>
+    <a href="#anatomy" class="nav-link">Winning Ad</a>
+    <a href="#concepts" class="nav-link">New Concepts</a>
+    <a href="#competitors" class="nav-link">Competitors</a>
+    <a href="#structure" class="nav-link">Structure</a>
+    <a href="#issues" class="nav-link">Issues</a>
+    <a href="#strategy" class="nav-link">Strategy</a>
+    <a href="#launch" class="nav-link">Launch Plan</a>
+    <a href="#projection" class="nav-link">Projection</a>
+    <a href="#verdict" class="nav-link">Verdict</a>
+  </div>
+</nav>
+
+<div class="page">
+
+<!-- COVER -->
+<section id="cover" style="border-top:none;">
+  <div class="grid-bg"></div>
+  <div class="cover-content">
+    <div class="eyebrow">Meta Ads Performance &amp; Scale Audit</div>
+    <h1>Elior Watches<br><em style="color:var(--teal)">Scale Audit</em></h1>
+    <p style="font-size:17px;margin-top:20px;color:var(--muted);">Ninety days of Meta data rebuilt and validated line by line. Tracking, funnel, creative, structure and competitive position assessed against scale benchmarks. A clear route from roughly 3,000 dollars a day at thin margin to a durable 2.5x at 8,000 dollars a day.</p>
+    <div class="status-row">
+      <span class="badge medium pulse"><span class="dot"></span>Scaling Profitably but at Thin Margin</span>
+      <span class="badge high pulse"><span class="dot"></span>Two Checkout-Stage Leaks</span>
+      <span class="badge high pulse"><span class="dot"></span>Account Over-Fragmented</span>
+      <span class="badge high pulse"><span class="dot"></span>Creative Policy Risk at Scale</span>
+    </div>
+    <div class="cover-meta">
+      <div class="cover-meta-item"><span class="cover-meta-label">Spend Analysed</span><span class="cover-meta-val">82,177 USD</span></div>
+      <div class="cover-meta-item"><span class="cover-meta-label">Window</span><span class="cover-meta-val">3 Mar to 31 May 2026</span></div>
+      <div class="cover-meta-item"><span class="cover-meta-label">Purchases Tracked</span><span class="cover-meta-val">867</span></div>
+      <div class="cover-meta-item"><span class="cover-meta-label">Active Ads Audited</span><span class="cover-meta-val">260</span></div>
+      <div class="cover-meta-item"><span class="cover-meta-label">Prepared By</span><span class="cover-meta-val">Your Marketing Partners</span></div>
+      <div class="cover-meta-item"><span class="cover-meta-label">Date</span><span class="cover-meta-val">1 June 2026</span></div>
+    </div>
+  </div>
+  <div class="cover-bg-text">EW</div>
+</section>
+
+<!-- SNAPSHOT -->
+<section id="snapshot">
+  <div class="eyebrow">Executive Snapshot</div>
+  <h2>The Account at a Glance</h2>
+
+  <div class="grid-4" style="margin-bottom:32px;">
+    <div class="stat-box"><div class="stat-val t">82.2K</div><div class="stat-label">90-Day Spend (USD)</div><div class="stat-sub">Two ad accounts, one brand</div></div>
+    <div class="stat-box"><div class="stat-val t">867</div><div class="stat-label">Total Purchases</div><div class="stat-sub">94.80 USD blended CPP</div></div>
+    <div class="stat-box"><div class="stat-val t">170.9K</div><div class="stat-label">Tracked Revenue (USD)</div><div class="stat-sub">AOV 197 USD</div></div>
+    <div class="stat-box"><div class="stat-val a">2.08x</div><div class="stat-label">Blended ROAS</div><div class="stat-sub">90-day average</div></div>
+  </div>
+
+  <div class="grid-3" style="margin-bottom:32px;">
+    <div class="stat-box"><div class="stat-val">38.1%</div><div class="stat-label">Average Hook Rate</div><div class="stat-sub">3-sec plays over impressions, strong</div></div>
+    <div class="stat-box"><div class="stat-val">13.49</div><div class="stat-label">CPM (USD)</div><div class="stat-sub">Frequency 1.25 per week, ample headroom</div></div>
+    <div class="stat-box"><div class="stat-val r">1.85x</div><div class="stat-label">Current Run-Rate ROAS</div><div class="stat-sub">Last 7 days near breakeven of 1.68x</div></div>
+  </div>
+
+  <div class="grid-2">
+    <div class="card teal">
+      <h4>The Quick Read</h4>
+      <p style="font-size:13px;">This is a real business with a validated offer. A 165 to 185 dollar faith watch is converting cold traffic at 95 dollar acquisition cost, the conviction creative is producing viral reach, and the bundle and upsell engine is lifting AOV to nearly 200 dollars. The account is not broken. <strong>It has been scaled roughly twentyfold in a single month and efficiency has compressed toward breakeven in the process.</strong></p>
+      <p style="font-size:13px;margin-top:10px;">The unlock is not a new product or a new market. It is restoring efficiency at the current spend by consolidating a fragmented structure behind proven winners, sealing two checkout-stage leaks, sharpening the top-funnel signal, and protecting the ad account from policy risk so spend can compound rather than stall. <strong>The margin is already inside this funnel. The job is to stop leaking it.</strong></p>
+    </div>
+    <div class="card amber">
+      <h4>What Has To Happen This Week</h4>
+      <ul class="check-list amber" style="margin-top:8px;">
+        <li><strong>Consolidate the structure.</strong> Sixty-two active ad sets, a third of spend in a 124-ad long tail, plus Zombie ad sets at 1.3x to 1.5x. Concentrate budget into a clean Advantage+ plus testing plus retargeting frame.</li>
+        <li><strong>Seal the checkout.</strong> Only 39.3 percent of initiated checkouts complete and only 25.7 percent of add to carts initiate checkout. This is the single largest pool of recoverable revenue at current spend.</li>
+        <li><strong>De-risk the creative.</strong> The angles that attack protected groups carry real Meta policy exposure. At 3,000 dollars a day an account restriction is catastrophic. Re-cut the conviction hook around faith identity, not attack.</li>
+        <li><strong>Sharpen the signal.</strong> Lift PageView and View Content match quality from 6.4 toward 8 plus with richer customer-data parameters so the algorithm optimises on cleaner data.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- TRAJECTORY -->
+<section id="trajectory">
+  <div class="eyebrow">90-Day Trajectory</div>
+  <h2>A Rapid Scale, Not a Decline</h2>
+
+  <p style="font-size:15px;margin-bottom:32px;max-width:860px;">Reading the 90-day average alone hides what actually happened. Back-calculating each window shows the real story. The account spent around 122 dollars a day in March and April at an efficient 3.16x, then scaled almost twentyfold into May, settling near 2,900 to 3,073 dollars a day. As volume climbed, ROAS compressed from 3.16x to the high 1.7s. That is the normal cost of scaling, but it has pushed the account to the edge of its breakeven of roughly 1.68x.</p>
+
+  <table class="data-table" style="margin-bottom:24px;">
+    <thead>
+      <tr>
+        <th>Window</th><th>Spend</th><th>Daily Spend</th><th>Purchases</th><th>Revenue</th><th>ROAS</th><th>CPP</th><th>Direction</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>3 Mar to 1 May</strong></td><td>7,296</td><td>122 / day</td><td>113</td><td>23,060</td><td><span class="roas-pill roas-g">3.16x</span></td><td>65</td><td class="good">Efficient base</td></tr>
+      <tr><td><strong>May, full month</strong></td><td>74,881</td><td>2,496 / day</td><td>754</td><td>147,864</td><td><span class="roas-pill roas-a">1.97x</span></td><td>99</td><td class="ok">Scaled hard</td></tr>
+      <tr><td><strong>18 to 24 May</strong></td><td>21,508</td><td>3,073 / day</td><td>182</td><td>36,296</td><td><span class="roas-pill roas-r">1.69x</span></td><td>118</td><td class="bad">Below breakeven</td></tr>
+      <tr><td><strong>25 to 31 May</strong></td><td>20,218</td><td>2,888 / day</td><td>192</td><td>37,377</td><td><span class="roas-pill roas-a">1.85x</span></td><td>105</td><td class="ok">Recovering</td></tr>
+    </tbody>
+  </table>
+
+  <div class="grid-2">
+    <div class="highlight amber">
+      <strong>Why this matters for diagnosis.</strong> The 90-day average of 2.08x is flattered by the efficient low-spend base. The honest current picture is 1.69x to 1.85x at roughly 2,900 dollars a day. With a margin-based breakeven of 1.52x and a client-stated breakeven CPA of 110 dollars (a 1.68x ROAS floor), the most recent two weeks have hovered from slightly below to slightly above breakeven. The first job is to rebuild the margin per dollar, not to push more volume on top of a thinning base.
+    </div>
+    <div class="highlight">
+      <strong>The good news this is not fatigue.</strong> Weekly frequency is only 1.25 and CPM is stable near 13 dollars on a broad international audience of 460 to 541 million. The account has plenty of fresh reach left. The compression is coming from audience and structure dilution and from conversion leakage downstream, both of which are fixable without touching reach. That is a far better problem to have than a saturated audience.
+    </div>
+  </div>
+</section>
+
+<!-- TRACKING -->
+<section id="tracking">
+  <div class="eyebrow">Measurement Infrastructure</div>
+  <h2>Tracking Is a Strength, Not a Hole</h2>
+
+  <div class="two-col asym" style="margin-bottom:32px;">
+    <div>
+      <h4>What the Dataset Shows</h4>
+      <p style="margin-bottom:14px;font-size:14px;">Unlike many accounts at this stage, the measurement layer here is in good shape. The Shopify dataset feeds Meta through both the Conversions API and the Meta pixel, and every funnel event reads as Active with a Multiple integration, which means the two layers are deduplicating rather than firing twice. The full path is tracked: PageView, View Content, Add to Cart, Initiate Checkout, Add Payment Info and Purchase are all live.</p>
+      <p style="margin-bottom:14px;font-size:14px;">The bottom of the funnel is excellent. <strong>Purchase reads 9.0 out of 10 on event match quality and is being used by 24 ad sets,</strong> with Add Payment Info at 8.0 and Initiate Checkout at 7.7. This is exactly what you want feeding a purchase-optimised account at scale.</p>
+      <p style="font-size:14px;">The clear opportunity sits at the top. PageView and View Content, the two highest-volume events at 357,700 and 118,700 respectively, are stuck at 6.4 out of 10. These are the events the algorithm leans on most to find new buyers, so lifting their match quality is one of the cheapest efficiency gains available. There is also one open diagnostic in Events Manager that should be cleared.</p>
+    </div>
+    <div>
+      <h4>Event Match Quality, Last 28 Days</h4>
+      <div style="display:flex;flex-direction:column;gap:8px;margin-top:12px;">
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:12px 14px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;"><span style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;color:var(--white);">PageView</span><span class="badge high"><span class="dot"></span>6.4 / 10</span></div>
+          <div style="font-size:11px;color:var(--muted2);margin-top:4px;">357.7K events, top-funnel signal to sharpen</div>
+        </div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:12px 14px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;"><span style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;color:var(--white);">View Content</span><span class="badge high"><span class="dot"></span>6.4 / 10</span></div>
+          <div style="font-size:11px;color:var(--muted2);margin-top:4px;">118.7K events, same lift opportunity</div>
+        </div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:12px 14px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;"><span style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;color:var(--white);">Add to Cart</span><span class="badge medium"><span class="dot"></span>6.8 / 10</span></div>
+          <div style="font-size:11px;color:var(--muted2);margin-top:4px;">25.5K events</div>
+        </div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:12px 14px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;"><span style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;color:var(--white);">Initiate Checkout</span><span class="badge good"><span class="dot"></span>7.7 / 10</span></div>
+          <div style="font-size:11px;color:var(--muted2);margin-top:4px;">5.6K events</div>
+        </div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:12px 14px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;"><span style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;color:var(--white);">Add Payment Info</span><span class="badge good"><span class="dot"></span>8.0 / 10</span></div>
+          <div style="font-size:11px;color:var(--muted2);margin-top:4px;">2.2K events</div>
+        </div>
+        <div style="background:rgba(0,230,118,0.04);border:1px solid rgba(0,230,118,0.2);border-radius:8px;padding:12px 14px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;"><span style="font-family:'Syne',sans-serif;font-weight:700;font-size:11px;color:var(--white);">Purchase</span><span class="badge good"><span class="dot"></span>9.0 / 10</span></div>
+          <div style="font-size:11px;color:var(--muted2);margin-top:4px;">2.2K events, used by 24 ad sets</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h4>Tracking Action List</h4>
+  <div style="margin-top:14px;">
+    <div class="fix-row"><span class="fix-tag now">Now</span><div class="fix-text"><strong>Enrich customer-data parameters on the high-volume top-funnel events.</strong> Pass hashed email, hashed phone, first and last name, city, postal code, country and the Meta browser and click identifiers on PageView and View Content. This is the lever that moves 6.4 toward 8 plus and gives the algorithm a cleaner base to prospect on.</div></div>
+    <div class="fix-row"><span class="fix-tag now">Now</span><div class="fix-text"><strong>Clear the open Events Manager diagnostic.</strong> One issue is flagged on the dataset. Resolve it before any scaling decisions so the signal feeding the auction is clean.</div></div>
+    <div class="fix-row"><span class="fix-tag week">This Week</span><div class="fix-text"><strong>Confirm every purchase ad set optimises for the Purchase event with value optimisation on.</strong> Purchase is used by 24 ad sets today. With 62 active ad sets, the remainder are optimising on weaker signal, which is one source of the efficiency drag at scale.</div></div>
+    <div class="fix-row"><span class="fix-tag week">This Week</span><div class="fix-text"><strong>Standardise attribution across the account.</strong> The campaigns currently mix Multiple attribution settings with 7-day click and 7-day click 1-day view configurations. Set every purchase ad set to 7-day click, 1-day view so reporting is comparable and decisions are like for like.</div></div>
+    <div class="fix-row"><span class="fix-tag month">This Month</span><div class="fix-text"><strong>Consolidate to a single source-of-truth dataset.</strong> The dataset lists seven connected websites. Confirm there is no signal split across storefronts or duplicate pixels, and route everything through one clean dataset and one CAPI connection.</div></div>
+  </div>
+</section>
+
+<!-- FUNNEL -->
+<section id="funnel">
+  <div class="eyebrow">90-Day Funnel Forensics</div>
+  <h2>Where the Margin Is Leaking</h2>
+
+  <div class="two-col asym" style="margin-bottom:32px;">
+    <div>
+      <h4>Meta-Attributed Funnel vs Benchmark</h4>
+      <div class="funnel-viz" style="margin-top:16px;">
+        <div class="funnel-step" style="background:var(--surface);border-radius:8px 8px 0 0;border:1px solid var(--border);">
+          <div><div class="funnel-label">Landing Page Views</div><div class="funnel-rate">From 86,077 link clicks</div></div>
+          <div style="text-align:right"><div class="funnel-num" style="color:var(--white)">61,978</div><div class="funnel-rate">72.0% click to LPV</div></div>
+        </div>
+        <div class="funnel-gap"></div>
+        <div class="funnel-step" style="background:rgba(0,230,118,0.04);border:1px solid rgba(0,230,118,0.2);">
+          <div><div class="funnel-label">Adds to Cart</div><div class="funnel-rate" style="color:var(--green);">Benchmark 10 to 15%</div></div>
+          <div style="text-align:right"><div class="funnel-num" style="color:var(--green)">8,585</div><div class="funnel-rate" style="color:var(--green)">13.9% of LPV, healthy</div></div>
+        </div>
+        <div class="funnel-gap"></div>
+        <div class="funnel-step" style="background:rgba(255,77,77,0.04);border:1px solid rgba(255,77,77,0.25);">
+          <div><div class="funnel-label">Checkouts Initiated</div><div class="funnel-rate" style="color:var(--red)">Benchmark 45 to 65%</div></div>
+          <div style="text-align:right"><div class="funnel-num" style="color:var(--red)">2,207</div><div class="funnel-rate" style="color:var(--red)">25.7% of ATC</div></div>
+        </div>
+        <div class="funnel-gap"></div>
+        <div class="funnel-step" style="background:rgba(255,77,77,0.04);border:1px solid rgba(255,77,77,0.25);border-radius:0 0 8px 8px;">
+          <div><div class="funnel-label">Purchases</div><div class="funnel-rate" style="color:var(--red)">Benchmark 45 to 65%, well below</div></div>
+          <div style="text-align:right"><div class="funnel-num" style="color:var(--red)">867</div><div class="funnel-rate" style="color:var(--red)">39.3% of IC</div></div>
+        </div>
+      </div>
+      <div class="highlight red" style="margin-top:20px;">
+        <strong>Two compounding leaks below the cart.</strong> The top of the funnel is healthy. Hook rate is 38.1 percent, click to landing page is 72 percent, and landing page to add to cart is 13.9 percent, right in benchmark. Then the floor drops out. Only 25.7 percent of add to carts initiate checkout, and only 39.3 percent of those finish. For a considered 185 dollar purchase a lower completion rate is expected, but these two stages multiplied turn a strong front end into a thin back end. Closing them is the highest-leverage work on the account.
+      </div>
+    </div>
+    <div>
+      <h4>The Prize, Quantified</h4>
+      <p style="font-size:13px;margin-bottom:16px;">Three scenarios run against the live 90-day data, holding ad spend constant. These show the revenue sitting inside the existing funnel.</p>
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:14px 16px;">
+          <div style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;color:var(--teal);letter-spacing:1px;text-transform:uppercase;margin-bottom:4px;">Scenario A, Checkout Fix</div>
+          <div style="font-size:13px;color:var(--text);">Lift IC to Purchase from 39 to 52%</div>
+          <div style="font-size:12px;color:var(--muted);margin-top:6px;">Plus 281 purchases, revenue to <strong style="color:var(--green);">226K</strong>, ROAS to <strong style="color:var(--green);">2.75x</strong></div>
+        </div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:14px 16px;">
+          <div style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;color:var(--teal);letter-spacing:1px;text-transform:uppercase;margin-bottom:4px;">Scenario B, Cart and Checkout</div>
+          <div style="font-size:13px;color:var(--text);">ATC to IC to 38%, IC to Purchase to 52%</div>
+          <div style="font-size:12px;color:var(--muted);margin-top:6px;">Plus 829 purchases, revenue to <strong style="color:var(--green);">334K</strong>, ROAS to <strong style="color:var(--green);">4.07x</strong></div>
+        </div>
+        <div style="background:rgba(0,196,154,0.06);border:1px solid var(--teal-border);border-radius:8px;padding:14px 16px;">
+          <div style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;color:var(--teal);letter-spacing:1px;text-transform:uppercase;margin-bottom:4px;">Scenario C, Full Stack</div>
+          <div style="font-size:13px;color:var(--text);">Funnel fixed plus AOV 197 to 220</div>
+          <div style="font-size:12px;color:var(--muted);margin-top:6px;">Revenue to <strong style="color:var(--green);">373K</strong>, ROAS to <strong style="color:var(--green);">4.54x</strong></div>
+        </div>
+      </div>
+      <div class="highlight" style="margin-top:16px;font-size:12px;">
+        A note on rigour. The add-to-cart event on a slide cart can fire generously, so the cleanest, most defensible lever is checkout completion, Scenario A. Treat B and C as the directional ceiling that opens up once the cart-to-checkout path is also tightened. Either way, the same ad spend is buying far more revenue.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CRO -->
+<section id="cro">
+  <div class="eyebrow">Product Page, Cart &amp; Checkout CRO</div>
+  <h2>The CRO Picture: Strong Base, Two Fixable Drops</h2>
+
+  <p style="font-size:15px;margin-bottom:28px;max-width:860px;">The store is well built. There is a quantity bundle selector, a reserved-cart urgency timer, a free adjustment tool, a shipping-protection bump, a premium-case upsell, an in-cart testimonial, broad payment methods, a one-year warranty and a 30-day money-back guarantee. This is a more advanced funnel than most stores at this spend. The work here is targeted, not a rebuild.</p>
+
+  <div class="grid-2" style="margin-bottom:32px;">
+    <div>
+      <h4>Product Page and Cart Observations</h4>
+      <ul class="check-list amber" style="margin-top:8px;">
+        <li><strong>The email pop-up interrupts on entry.</strong> The "Statement Piece" modal with a guilt-decline appears immediately and covers the hero. Switch to a delayed or exit-intent trigger so paid visitors see the product before the interruption.</li>
+        <li><strong>The cart drawer is doing a lot at once.</strong> Bundle tiers, a free tool, a shipping-protection toggle, a premium-case toggle and a testimonial all sit above the checkout button. This richness likely contributes to the steep add-to-cart to checkout drop. Make the Secure Checkout button unmissable and reduce the cognitive load above it.</li>
+        <li><strong>The two-watch bundle is the AOV lever.</strong> Most orders are single watches. Default-select the two-watch tier, badge it as most chosen, and frame the saving in absolute dollars rather than only a struck-through price.</li>
+        <li><strong>Surface review stars in the buy box.</strong> The collection page advertises 4.6 out of 5 from 7,000 plus believers, but that trust signal does not always reach the user at the decision point. Place an aggregate rating directly under the product title.</li>
+        <li><strong>Quality expectations need managing.</strong> Public reviews praise durability and the Crown of Thorns finish, but a few flag a non-moving dial and a missing promised gift box. Tighten quality control and fulfilment promises, and pre-empt the movement question on the page, since unmet expectations drive refunds and dampen repeat.</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Checkout Observations</h4>
+      <ul class="check-list red" style="margin-top:8px;">
+        <li><strong>Only 39.3 percent of checkouts complete.</strong> This is the single highest-value fix on the store. Everything below feeds it.</li>
+        <li><strong>Express options are thin at the top.</strong> Checkout leads with Shop Pay and Google Pay only. Klarna is offered yet not surfaced as an express button, and PayPal is absent up top. Add Klarna and PayPal express to catch the buyers who prefer them.</li>
+        <li><strong>Auto-added costs at checkout can suppress completion.</strong> Shipping plus an auto-toggled shipping-protection line appear at the final step. Test whether defaulting protection off, or making the free-shipping threshold explicit earlier, lifts completion.</li>
+        <li><strong>Phone is optional.</strong> For SMS abandoned-cart recovery on a considered purchase, make phone required with a short reason, for delivery updates.</li>
+        <li><strong>Trust stack is light in the order summary.</strong> Add a compact row of guarantees near the total: warranty, 30-day returns, secure payment, tracked shipping.</li>
+        <li><strong>Carry urgency into checkout.</strong> The reserved-cart timer and same-day-dispatch message live on the product page but fade at the pay step, exactly where reassurance and urgency matter most.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card amber" style="margin-bottom:28px;">
+    <h4 style="color:var(--amber);">Site Performance, the Honest Version</h4>
+    <p style="font-size:13px;">Real users currently pass Core Web Vitals in the field. Mobile landing is around 1.4 seconds and desktop around 1.5 seconds, with good interaction and layout-shift scores. That is why the funnel works. The lab picture is the warning sign. Lighthouse scores the product page at 24 on mobile and 28 on desktop, dragged down by a 12 to 14 megabyte page payload, roughly 900 kilobytes of unused JavaScript, render-blocking requests and heavy main-thread work. As paid mobile traffic scales onto slower devices and connections, that weight becomes a conversion tax and part of the 28 percent of clicks that never become a landing page view. Trimming the payload, deferring unused scripts and setting explicit image dimensions is incremental conversion upside, not an emergency.</p>
+  </div>
+
+  <h4>Prioritised CRO Action List</h4>
+  <div style="margin-top:16px;">
+    <div class="fix-row"><span class="fix-tag now">Now</span><div class="fix-text"><strong>Make the Secure Checkout button the clear primary action in the cart drawer</strong> and move secondary toggles below it. This directly targets the add-to-cart to checkout drop, the largest leak.</div></div>
+    <div class="fix-row"><span class="fix-tag now">Now</span><div class="fix-text"><strong>Add Klarna and PayPal as express buttons at the top of checkout</strong> alongside Shop Pay and Google Pay, to capture the buyers who abandon when their preferred method is not visible.</div></div>
+    <div class="fix-row"><span class="fix-tag now">Now</span><div class="fix-text"><strong>Switch the email pop-up to exit-intent or a 15-second delay</strong> so paid visitors engage the product first.</div></div>
+    <div class="fix-row"><span class="fix-tag week">This Week</span><div class="fix-text"><strong>Default-select the two-watch bundle</strong> with a most-chosen badge and an absolute-dollar saving. Target AOV from 197 to 220.</div></div>
+    <div class="fix-row"><span class="fix-tag week">This Week</span><div class="fix-text"><strong>Test protection-off by default and an explicit free-shipping threshold,</strong> then measure the effect on checkout completion.</div></div>
+    <div class="fix-row"><span class="fix-tag week">This Week</span><div class="fix-text"><strong>Add aggregate review stars to the buy box and a trust row to the checkout summary,</strong> and make the phone field required with a delivery-updates reason.</div></div>
+    <div class="fix-row"><span class="fix-tag month">This Month</span><div class="fix-text"><strong>Run a session-recording study on 1,000 product-page visitors</strong> to see exactly where the cart-to-checkout hesitation happens, then ship a data-grounded checkout test rather than guessing.</div></div>
+    <div class="fix-row"><span class="fix-tag month">This Month</span><div class="fix-text"><strong>Trim the page payload.</strong> Defer unused JavaScript, compress and correctly size images, and set explicit width and height to protect mobile conversion as spend scales.</div></div>
+  </div>
+</section>
+
+<!-- CREATIVES -->
+<section id="creatives">
+  <div class="eyebrow">Creative Intelligence</div>
+  <h2>What Is Actually Carrying the Spend</h2>
+  <p style="max-width:760px;margin-bottom:32px;">The library splits cleanly into three creative engines. We pulled every active ad, bucketed it by format and message, and weighted by spend so the read reflects where real budget lives, not where the ad count is. The pattern is consistent and useful: one engine builds attention, one converts most efficiently, and one reframes the obvious objection.</p>
+
+  <table class="data-table" style="margin-bottom:14px;">
+    <thead>
+      <tr><th>Creative Engine</th><th>Ads</th><th>Spend</th><th>Share</th><th>ROAS</th><th>Hook</th><th>Hold</th><th>Read</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Conviction and Identity Voiceover</strong><br><span class="dim" style="font-size:11px;">Cultural-contrast cold open into faith-identity payoff</span></td>
+        <td>98</td><td>27,500 USD</td><td>33.5%</td>
+        <td><span class="roas-pill" style="background:rgba(245,166,35,0.15);color:var(--amber);">1.83x</span></td>
+        <td>45%</td><td>17%</td>
+        <td class="ok">Attention engine</td>
+      </tr>
+      <tr>
+        <td><strong>Unboxing and Product Showcase</strong><br><span class="dim" style="font-size:11px;">Case reveal, fit on wrist, finish in macro</span></td>
+        <td>16</td><td>19,500 USD</td><td>23.7%</td>
+        <td><span class="roas-pill" style="background:rgba(0,230,118,0.15);color:var(--green);">2.23x</span></td>
+        <td class="dim">n/a</td><td class="dim">n/a</td>
+        <td class="good">Most efficient</td>
+      </tr>
+      <tr>
+        <td><strong>Skeptic Reframe and Offer</strong><br><span class="dim" style="font-size:11px;">Names the doubt, flips it, stacks the multi-product offer</span></td>
+        <td class="dim">balance</td><td class="dim">balance</td><td class="dim">balance</td>
+        <td><span class="roas-pill" style="background:rgba(0,196,154,0.12);color:var(--teal);">solid</span></td>
+        <td class="dim">n/a</td><td class="dim">n/a</td>
+        <td class="ok">Objection handler</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="dim" style="font-size:12px;margin-bottom:32px;">Hook is the three-second view rate, hold is the share still watching at the through point. Conviction ads earn the click but lose a high share before the message lands, which is why the bucket ROAS sits below the account average even though it produces the loudest winners.</p>
+
+  <div class="grid-2" style="margin-bottom:28px;">
+    <div class="card green">
+      <h4 style="color:var(--green);">What Is Working</h4>
+      <ul class="check-list green" style="margin-top:10px;">
+        <li><strong>Unboxing is the quiet champion.</strong> At 2.23x on 19,500 dollars it returns more per dollar than any other engine and answers the only real question a 165 dollar online watch raises, which is whether it looks and feels real.</li>
+        <li><strong>Conviction voiceover prints the outsized winners.</strong> The single best ad in the account, a cultural-contrast voiceover, ran 3,948 dollars at 2.77x and a 67 dollar cost per purchase off a 63 percent hook. When this engine connects it connects hard.</li>
+        <li><strong>The batch ad sets concentrate the winners well.</strong> The top set, Batch INT all winning ads, did 14,994 dollars at 2.47x across 186 purchases. The Unboxings batch did 7,254 dollars at 2.64x. These are the templates to feed.</li>
+        <li><strong>Two standout single ads beat the account.</strong> Ad2 returned 4.03x and INT Crazy1 returned 3.37x, both well clear of the 2.08x blended figure and worth isolating for scale.</li>
+      </ul>
+    </div>
+    <div class="card red">
+      <h4 style="color:var(--red);">What Is Dragging</h4>
+      <ul class="check-list red" style="margin-top:10px;">
+        <li><strong>Conviction hold rate is the leak inside the leak.</strong> A 45 percent hook with a 17 percent hold means most of the paid attention drops before the product or offer appears. The fix is structural: get the watch on screen earlier.</li>
+        <li><strong>Zombie sets are bleeding efficiency.</strong> Zombie WW at 1.33x and Zombie USA and CAN at 1.54x both sit below the 1.68x breakeven floor. These are clear pause-or-rebuild candidates.</li>
+        <li><strong>The tail is enormous and idle.</strong> 141 of 260 active ads have spent under 50 dollars and 151 have zero purchases. The account is carrying a large dormant library that dilutes learning and clutters delivery.</li>
+        <li><strong>Policy exposure rides on the loudest winners.</strong> Several top conviction ads lean on culture-war framing that attacks protected groups. That is a live account-restriction risk at 3,000 dollars a day and a fragile base to scale on. The durable path is positive faith identity, gifting and craft, which we expand in the concepts section.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="highlight amber">
+    <strong>Refresh cadence is the real constraint, not fatigue.</strong> Weekly frequency is only 1.24 and CPM is flat near 13 dollars, so the audience is not burned. What limits the account is how fast proven structures get rebuilt into fresh variations. With 43 ads carrying 80 percent of spend, a disciplined weekly cycle of three to five new variants per winning engine, built from the anatomy on the next slide, keeps delivery fed without touching reach.
+  </div>
+</section>
+
+<!-- ANATOMY -->
+<section id="anatomy">
+  <div class="eyebrow">Winning Ad Anatomy</div>
+  <h2>Inside the Best Ad in the Account</h2>
+  <p style="max-width:760px;margin-bottom:36px;">This is the conviction voiceover that built the account, the Faith On Your Wrist cut. It earned the highest engagement in the library at roughly 11,000 reactions, 294 comments and 448 shares, and its sibling cut drove a 2.77x return at a 67 dollar cost per purchase. Decoded into beats, it becomes a repeatable template rather than a lucky one-off.</p>
+
+  <div class="anatomy-wrap">
+    <div class="phone-mock">
+      <div class="phone-screen">
+        <div class="phone-header">
+          <div class="phone-avatar">EW</div>
+          <div class="phone-name">Elior Watches<span>Sponsored</span></div>
+        </div>
+        <div class="phone-body">The world tells you to blend in. We build for the ones who will not.</div>
+        <div class="phone-video">
+          <div style="position:absolute;top:8px;right:10px;font-family:'Syne',sans-serif;font-size:9px;color:var(--teal);letter-spacing:1px;">0:46</div>
+          <div style="font-family:'DM Serif Display',serif;font-size:16px;color:#fff;line-height:1.2;">Faith on<br>your wrist.</div>
+        </div>
+        <div class="phone-cta">
+          <div class="phone-cta-l">eliorwatches.com<br>Father's Day, 55% off</div>
+          <div class="phone-cta-btn">Shop Now</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <ul class="beat-list">
+        <li><span class="beat-time">0:00</span><div class="beat-body"><strong>Cultural Tension Cold Open</strong>A line that names the values clash head on. It is divisive on purpose and that is what drives the 63 percent hook. The lesson is the pattern, a sharp belief-led opener, not the specific target.</div></li>
+        <li><span class="beat-time">0:05</span><div class="beat-body"><strong>The Contrast</strong>Sets the noisy outside world against a quiet, grounded identity. The viewer is asked to pick a side, and the brand has already chosen theirs.</div></li>
+        <li><span class="beat-time">0:14</span><div class="beat-body"><strong>The Pivot, Meanwhile We Build</strong>Turns from commentary to craft. This is the hinge that converts an opinion video into a product video, and it is exactly where the current cut loses too many viewers.</div></li>
+        <li><span class="beat-time">0:20</span><div class="beat-body"><strong>Craftsmanship Demo</strong>Molten metal, the movement in macro, the bracelet articulating. This is the proof layer that answers the is-it-real question without saying a word.</div></li>
+        <li><span class="beat-time">0:30</span><div class="beat-body"><strong>Product Hero</strong>The dial fills the frame. Crown of Thorns, the cross index, the fluted bezel. Desire is built here.</div></li>
+        <li><span class="beat-time">0:38</span><div class="beat-body"><strong>Identity Payoff</strong>Faith on your wrist. The watch is reframed as a daily statement of who you are, not a fashion item.</div></li>
+        <li><span class="beat-time">0:44</span><div class="beat-body"><strong>Endcard and Offer</strong>Elior logo, Father's Day 55 percent off, clear shop prompt. Urgency and brand land together.</div></li>
+      </ul>
+      <div class="highlight" style="margin-top:18px;">
+        <strong>The single highest-leverage edit:</strong> pull the craftsmanship demo and a flash of the product hero into the first five seconds. The hook is already elite at 63 percent, but the 17 percent average hold says the proof arrives too late. Front-loading the watch should lift hold, carry more of the earned attention into the offer, and raise the bucket ROAS without changing spend or audience.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONCEPTS -->
+<section id="concepts">
+  <div class="eyebrow">New Creative Concepts</div>
+  <h2>Eight Concepts to Scale On Safely</h2>
+  <p style="max-width:780px;margin-bottom:32px;">The conviction engine works but rests on framing that carries real Meta policy risk at 3,000 dollars a day. To scale durably, the next wave should broaden the emotional surface beyond culture conflict and into the parts of the brand that are unimpeachable: faith identity, gifting, craftsmanship and proof. Each concept below is built from a beat that already converts in the account, just pointed at a wider and safer audience. Hooks are written as starting lines, not finished scripts.</p>
+
+  <div class="concept-grid">
+    <div class="concept-card featured">
+      <span class="concept-tag">Priority One</span>
+      <div class="concept-h">The Heirloom Gift</div>
+      <p style="font-size:13px;">Positions the watch as something passed down, a father to son or a milestone marker. Leans on the strongest existing review theme, bought as a gift, and rides Father's Day directly.</p>
+      <div class="concept-hook">"Some gifts get worn once. This one gets handed down."</div>
+      <div class="concept-meta"><span>Format: voiceover plus unboxing</span><span>Engine: gifting</span></div>
+    </div>
+    <div class="concept-card featured">
+      <span class="concept-tag">Priority One</span>
+      <div class="concept-h">Craft Answers the Doubt</div>
+      <p style="font-size:13px;">A pure proof film. Molten metal, movement macro, bracelet articulation, water and light on the dial. Built to answer is-it-real for a 165 dollar online watch and to scale the demo that the winning ad buries too late.</p>
+      <div class="concept-hook">"Sixty seconds of why this does not feel like a 165 dollar watch."</div>
+      <div class="concept-meta"><span>Format: macro craft</span><span>Engine: unboxing</span></div>
+    </div>
+    <div class="concept-card">
+      <span class="concept-tag">Test</span>
+      <div class="concept-h">The Skeptic Reframe</div>
+      <p style="font-size:13px;">A clean rebuild of the existing reframe angle. Open by voicing the obvious doubt that a faith watch sounds corny, then let the product and finish quietly overturn it. Keeps the mechanic, drops any attack on a group.</p>
+      <div class="concept-hook">"I thought a faith watch would be corny. Then it arrived."</div>
+      <div class="concept-meta"><span>Format: testimonial style</span><span>Engine: reframe</span></div>
+    </div>
+    <div class="concept-card">
+      <span class="concept-tag">Test</span>
+      <div class="concept-h">Founder Mission</div>
+      <p style="font-size:13px;">Direct to camera from the brand. Why Elior exists, what wearing your faith means, where the care goes. Builds trust and a brand moat that price-cutting rivals cannot copy, and gives the account a non-divisive flagship.</p>
+      <div class="concept-hook">"We did not set out to make a watch. We set out to make a statement you can wear."</div>
+      <div class="concept-meta"><span>Format: founder talking head</span><span>Engine: brand</span></div>
+    </div>
+    <div class="concept-card">
+      <span class="concept-tag">Test</span>
+      <div class="concept-h">Gift for Him, Seasonal</div>
+      <p style="font-size:13px;">Built for the woman buying for a husband, father or son, the exact voice in the strongest review. Soft, warm, gift-led, with the bundle and free case as the reason to buy two. Runs hard through Father's Day and again at Christmas.</p>
+      <div class="concept-hook">"He will never buy this for himself. That is the point."</div>
+      <div class="concept-meta"><span>Format: gift narrative</span><span>Engine: gifting</span></div>
+    </div>
+    <div class="concept-card">
+      <span class="concept-tag">Test</span>
+      <div class="concept-h">Worn In Daily</div>
+      <p style="font-size:13px;">Identity without conflict. A man through an ordinary day, work, prayer, family, the watch present in every frame as a quiet anchor. Carries the faith-identity payoff that converts, minus the cultural attack surface.</p>
+      <div class="concept-hook">"A reminder of what you stand for, every time you check the time."</div>
+      <div class="concept-meta"><span>Format: lifestyle montage</span><span>Engine: identity</span></div>
+    </div>
+    <div class="concept-card">
+      <span class="concept-tag">Refresh</span>
+      <div class="concept-h">Winners Compilation</div>
+      <p style="font-size:13px;">A fast cut stitching the best three seconds of the proven winners into one reel, capped with the offer. Cheap to produce, reliably efficient, and the natural way to keep the top batch sets fed each week.</p>
+      <div class="concept-hook">"The watch 7,000 believers are already wearing."</div>
+      <div class="concept-meta"><span>Format: compilation</span><span>Engine: social proof</span></div>
+    </div>
+    <div class="concept-card">
+      <span class="concept-tag">Test</span>
+      <div class="concept-h">Value Versus Luxury</div>
+      <p style="font-size:13px;">An honest comparison. The look and feel of a presidential-style dress watch at a fraction of the price, framed as smart rather than cheap. Pre-empts the price objection and lifts perceived value toward the higher bundle tier.</p>
+      <div class="concept-hook">"Looks like five figures. Costs less than dinner for two."</div>
+      <div class="concept-meta"><span>Format: split comparison</span><span>Engine: value</span></div>
+    </div>
+  </div>
+
+  <div class="highlight" style="margin-top:26px;">
+    <strong>Production cadence.</strong> Ship three to five new variants per week, weighted toward the two priority concepts, each built on a proven beat from the winning anatomy. Hold every new ad to a clear bar: a hook above 40 percent and a cost per purchase under 110 dollars within the first 50 dollars of spend, or it is cut. This keeps the library fresh, the policy base safe, and delivery fed as spend climbs.
+  </div>
+</section>
+
+<!-- COMPETITORS -->
+<section id="competitors">
+  <div class="eyebrow">Competitive Landscape</div>
+  <h2>Where Elior Sits in the Faith Watch Market</h2>
+  <p style="max-width:780px;margin-bottom:32px;">The faith watch category is small but no longer empty. Elior occupies a defensible mid-premium position between a cheaper direct clone below it and a more credible, established brand above it. The strategic risk is being squeezed on price from one side and on product credibility from the other, so the moat has to be brand, bundle economics and design range.</p>
+
+  <div class="comp-grid" style="margin-bottom:24px;">
+    <div class="comp-card direct">
+      <div class="comp-head"><span class="comp-name">YHWH Timepieces</span><span class="comp-price">100 USD</span></div>
+      <div class="comp-url">yhwh-timepieces.com</div>
+      <p style="font-size:13px;">The closest direct clone of the model. Verse-named watches, a 10,000 plus believers claim and a giving program, priced at roughly 100 dollars against a 200 dollar anchor. <strong style="color:var(--amber);">Undercuts Elior on headline price,</strong> which makes a price-only fight unwise. Elior wins on design breadth, bundle economics and a stronger offer, not on being cheaper.</p>
+    </div>
+    <div class="comp-card premium">
+      <div class="comp-head"><span class="comp-name">Egard Watch Company</span><span class="comp-price">Premium</span></div>
+      <div class="comp-url">egardwatches.com</div>
+      <p style="font-size:13px;">Established and credible. A faith collection, ten percent donated to persecuted Christians and a 36 month warranty. Its founder originated the viral culture-positioning ad playbook that earned heavy media coverage, which <strong style="color:var(--teal);">validates Elior's conviction mechanic at a higher level</strong> while showing the more durable, brand-led way to run it.</p>
+    </div>
+    <div class="comp-card">
+      <div class="comp-head"><span class="comp-name">Faithful Timepieces</span><span class="comp-price">Premium</span></div>
+      <div class="comp-url">faithfultimepieces.com</div>
+      <p style="font-size:13px;">A smaller premium player built on real specification: a Seiko movement, sapphire crystal and engraved casebacks. Competes on craft credibility rather than reach, and is the benchmark to watch if Elior wants to defend the quality flank against buyers who scrutinise the movement.</p>
+    </div>
+    <div class="comp-card">
+      <div class="comp-head"><span class="comp-name">The Long Tail</span><span class="comp-price">Budget</span></div>
+      <div class="comp-url">Etsy, Amazon, Zazzle, church suppliers</div>
+      <p style="font-size:13px;">Engraved, olivewood and budget faith watches sold through marketplaces. Low direct threat because they do not run a paid DTC funnel or a real brand, but they cap how high the floor price of the category can feel to a first-time buyer.</p>
+    </div>
+  </div>
+
+  <div class="grid-2" style="margin-bottom:24px;">
+    <div class="card teal">
+      <h4>Where Elior Wins</h4>
+      <ul class="check-list green" style="margin-top:10px;">
+        <li><strong>Offer and bundle engine.</strong> The two-watch tier, free case and free tools build an AOV near 197 dollars that the 100 dollar clone cannot easily match without destroying its own margin.</li>
+        <li><strong>Design range.</strong> Crown of Thorns, John 14:6, Chi-Rho, Sacred Heart and the gold line give far more shots on goal than single-model rivals.</li>
+        <li><strong>Creative machine.</strong> A working three-engine creative system and a proven winning template, which most of the category does not have.</li>
+      </ul>
+    </div>
+    <div class="card amber">
+      <h4>Where Elior Is Exposed</h4>
+      <ul class="check-list amber" style="margin-top:10px;">
+        <li><strong>Price versus YHWH.</strong> A direct clone sits at roughly half the anchor price, so the value story has to be told clearly or the comparison shopper drifts down.</li>
+        <li><strong>Product credibility versus Egard and Faithful.</strong> Quartz movements and a few reviews flagging a non-moving dial leave a credibility gap that craft-led rivals can press.</li>
+        <li><strong>Policy and IP risk.</strong> Culture-war creative invites account restriction, and the Rolex-homage design invites both IP attention and cheap counterfeits. Both are scaling risks, not present-day blockers.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="highlight">
+    <strong>Make the Ad Library a standing tool.</strong> Competitor ad creative could not be pulled into this report directly, but the Meta Ad Library is public and free. We recommend a weekly fifteen minute sweep of YHWH and Egard to track which angles they scale and how long they run. Persistent ads signal winners worth studying, and sudden pauses signal fatigue or a policy strike, which is exactly the early warning Elior wants given its own policy exposure.
+  </div>
+</section>
+
+<!-- STRUCTURE -->
+<section id="structure">
+  <div class="eyebrow">Account Structure</div>
+  <h2>Too Many Boxes, Not Enough Signal</h2>
+  <p style="max-width:780px;margin-bottom:32px;">The account scaled roughly twentyfold in May, but the structure did not scale with it. Sixty two active ad sets and 260 active ads spread a finite conversion signal across far too many learning phases, which is a major reason efficiency compressed from 3.16x to under 1.85x as spend climbed. The fix is consolidation, not expansion.</p>
+
+  <div class="grid-2" style="margin-bottom:28px;">
+    <div class="card red">
+      <h4 style="color:var(--red);">The Problem in Numbers</h4>
+      <div class="grid-2" style="gap:12px;margin-top:8px;">
+        <div class="stat-box"><div class="stat-val">62</div><div class="stat-label">Active Ad Sets</div><div class="stat-sub">Signal split far too thin</div></div>
+        <div class="stat-box"><div class="stat-val">260</div><div class="stat-label">Active Ads</div><div class="stat-sub">Most below learning volume</div></div>
+        <div class="stat-box"><div class="stat-val">43</div><div class="stat-label">Ads Carry 80% Spend</div><div class="stat-sub">The real working set</div></div>
+        <div class="stat-box"><div class="stat-val">151</div><div class="stat-label">Ads With Zero Sales</div><div class="stat-sub">Pure dilution</div></div>
+      </div>
+    </div>
+    <div class="card green">
+      <h4 style="color:var(--green);">The Target Shape</h4>
+      <ul class="check-list green" style="margin-top:10px;">
+        <li><strong>One scaled Advantage+ campaign</strong> as the core. The account already runs Advantage+ sales with strong batch sets, so consolidate the proven winners into a small number of well-fed ad sets rather than dozens.</li>
+        <li><strong>One testing campaign,</strong> modest budget, where the three to five weekly new variants prove themselves against a clear bar before promotion.</li>
+        <li><strong>One retargeting campaign</strong> built on the healthy pixel, catching the add-to-cart and checkout abandoners who are the single biggest recoverable group.</li>
+        <li><strong>Kill the dead weight.</strong> Pause the Zombie sets and the 151 zero-sale ads. Fewer, better-fed boxes give the algorithm the concentrated signal it needs to hold efficiency at scale.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="highlight amber">
+    <strong>Budget and bidding discipline as spend climbs.</strong> Consolidating ad sets concentrates the conversion signal so each one clears the weekly purchase threshold that keeps it out of permanent learning. Pair that with a cost-per-result or ROAS guardrail near the 1.68x breakeven floor, scale budgets in measured steps rather than overnight jumps, and let the Advantage+ core do the heavy lifting while the testing campaign feeds it. This is how the account restores efficiency first, then scales spend on a stable base.
+  </div>
+</section>
+
+<!-- ISSUES -->
+<section id="issues">
+  <div class="eyebrow">Issue Register</div>
+  <h2>Everything We Found, Ranked</h2>
+  <p style="max-width:760px;margin-bottom:32px;">One consolidated view of every issue, ordered by revenue impact. The two checkout-stage leaks sit at the top because they are the largest and most recoverable, and because fixing them improves the return on every dollar already being spent.</p>
+
+  <table class="data-table">
+    <thead>
+      <tr><th>Issue</th><th>Severity</th><th>Where</th><th>Impact</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Checkout completion at 39.3%</strong><br><span class="dim" style="font-size:11px;">Six in ten started checkouts never finish</span></td>
+        <td><span class="badge critical"><span class="dot"></span>Critical</span></td>
+        <td>Site checkout</td>
+        <td class="bad">Highest recoverable revenue</td>
+      </tr>
+      <tr>
+        <td><strong>Add-to-cart to checkout at 25.7%</strong><br><span class="dim" style="font-size:11px;">Overloaded cart drawer, weak primary action</span></td>
+        <td><span class="badge critical"><span class="dot"></span>Critical</span></td>
+        <td>Cart drawer</td>
+        <td class="bad">Compounds the checkout leak</td>
+      </tr>
+      <tr>
+        <td><strong>Account over-fragmented</strong><br><span class="dim" style="font-size:11px;">62 ad sets, 151 zero-sale ads dilute signal</span></td>
+        <td><span class="badge high"><span class="dot"></span>High</span></td>
+        <td>Ads Manager</td>
+        <td class="ok">Efficiency at scale</td>
+      </tr>
+      <tr>
+        <td><strong>Creative policy exposure</strong><br><span class="dim" style="font-size:11px;">Top winners attack protected groups</span></td>
+        <td><span class="badge high"><span class="dot"></span>High</span></td>
+        <td>Creative</td>
+        <td class="ok">Account-restriction risk</td>
+      </tr>
+      <tr>
+        <td><strong>Conviction hold rate at 17%</strong><br><span class="dim" style="font-size:11px;">Product and offer arrive too late in the cut</span></td>
+        <td><span class="badge high"><span class="dot"></span>High</span></td>
+        <td>Creative</td>
+        <td class="ok">Wasted paid attention</td>
+      </tr>
+      <tr>
+        <td><strong>AOV below its ceiling</strong><br><span class="dim" style="font-size:11px;">Single-watch default, bundle under-sold</span></td>
+        <td><span class="badge medium"><span class="dot"></span>Medium</span></td>
+        <td>Product and cart</td>
+        <td class="ok">Margin and ROAS upside</td>
+      </tr>
+      <tr>
+        <td><strong>Zombie ad sets below breakeven</strong><br><span class="dim" style="font-size:11px;">1.33x and 1.54x, under the 1.68x floor</span></td>
+        <td><span class="badge medium"><span class="dot"></span>Medium</span></td>
+        <td>Ads Manager</td>
+        <td class="ok">Direct waste, easy pause</td>
+      </tr>
+      <tr>
+        <td><strong>Page payload of 12 to 14 MB</strong><br><span class="dim" style="font-size:11px;">Passes the field today, heavy for mobile scale</span></td>
+        <td><span class="badge medium"><span class="dot"></span>Medium</span></td>
+        <td>Site speed</td>
+        <td class="ok">Latent mobile conversion tax</td>
+      </tr>
+      <tr>
+        <td><strong>Top-funnel event match quality at 6.4</strong><br><span class="dim" style="font-size:11px;">PageView and ViewContent under-enriched</span></td>
+        <td><span class="badge good"><span class="dot"></span>Low</span></td>
+        <td>Events Manager</td>
+        <td class="dim">Targeting precision upside</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- STRATEGY -->
+<section id="strategy">
+  <div class="eyebrow">The Plan</div>
+  <h2>Restore Efficiency, Then Scale</h2>
+  <p style="max-width:780px;margin-bottom:36px;">The account does not need rescuing, it needs sequencing. Scaling further on a thin-margin, fragmented base just buys more unprofitable volume. The right order is to fix the conversion leaks and tighten the structure first, lift the return on the spend already running, and only then push budget hard onto a base that can hold it. Three phases.</p>
+
+  <div class="phase-row">
+    <div class="phase-card active">
+      <div class="phase-title">Phase One</div>
+      <div class="phase-timeline">Days 1 to 30, Stabilise</div>
+      <ul class="check-list" style="gap:10px;">
+        <li>Ship the checkout and cart fixes that target the two critical leaks</li>
+        <li>Consolidate 62 ad sets into the Advantage+ core, testing and retargeting frame</li>
+        <li>Pause Zombie sets and the 151 zero-sale ads</li>
+        <li>Stand up the retargeting campaign on the existing healthy pixel</li>
+        <li>Hold spend near current levels while efficiency recovers</li>
+      </ul>
+      <div class="highlight" style="margin-top:14px;font-size:12px;">Goal: lift blended ROAS back above 2.0x without adding spend.</div>
+    </div>
+    <div class="phase-card">
+      <div class="phase-title">Phase Two</div>
+      <div class="phase-timeline">Days 31 to 90, Rebuild Creative</div>
+      <ul class="check-list" style="gap:10px;">
+        <li>Launch the two priority concepts, Heirloom Gift and Craft Answers the Doubt</li>
+        <li>Run the weekly cadence of three to five brand-safe variants</li>
+        <li>Front-load product and craft in conviction cuts to lift hold</li>
+        <li>Promote winners into the Advantage+ core, retire the policy-risk base</li>
+        <li>Begin measured budget steps as efficiency holds</li>
+      </ul>
+      <div class="highlight" style="margin-top:14px;font-size:12px;">Goal: a durable, policy-safe creative engine feeding a stable core.</div>
+    </div>
+    <div class="phase-card">
+      <div class="phase-title">Phase Three</div>
+      <div class="phase-timeline">Days 91 plus, Scale</div>
+      <ul class="check-list" style="gap:10px;">
+        <li>Scale spend toward and beyond 5,000 dollars a day on the proven base</li>
+        <li>Hold ROAS at or above the 2.5x target with the guardrail in place</li>
+        <li>Push AOV toward 220 dollars through the bundle default and value framing</li>
+        <li>Layer seasonal pushes, Father's Day then Christmas, on the gifting concepts</li>
+        <li>Keep the weekly Ad Library sweep and creative refresh running</li>
+      </ul>
+      <div class="highlight" style="margin-top:14px;font-size:12px;">Goal: 8,000 dollars a day at a sustainable 2.5x.</div>
+    </div>
+  </div>
+</section>
+
+<!-- LAUNCH -->
+<section id="launch">
+  <div class="eyebrow">First Thirty Days</div>
+  <h2>The Launch Plan</h2>
+  <p style="max-width:760px;margin-bottom:36px;">A concrete week-by-week sequence for Phase One. The order is deliberate: the highest-impact, lowest-effort conversion fixes first, structure next, creative groundwork last, so each week compounds on the one before.</p>
+
+  <div class="two-col asym">
+    <div class="timeline">
+      <div class="tl-item" style="margin-bottom:26px;">
+        <div class="tl-dot"></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+          <span class="tl-title">Week 1, Stop the Bleed</span>
+          <span class="tl-status pending">CRO and audit</span>
+        </div>
+        <div class="tl-body">Make Secure Checkout the clear primary action in the cart drawer and push the toggles below it. Add Klarna and PayPal express buttons at the top of checkout. Switch the email pop-up to exit-intent. Pause the Zombie sets and the 151 zero-sale ads the same week.</div>
+      </div>
+      <div class="tl-item" style="margin-bottom:26px;">
+        <div class="tl-dot"></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+          <span class="tl-title">Week 2, Consolidate</span>
+          <span class="tl-status pending">Structure</span>
+        </div>
+        <div class="tl-body">Collapse the 62 ad sets into the Advantage+ core, one testing campaign and one retargeting campaign. Set the ROAS guardrail near 1.68x. Default-select the two-watch bundle and reframe the saving in dollars to start lifting AOV.</div>
+      </div>
+      <div class="tl-item" style="margin-bottom:26px;">
+        <div class="tl-dot"></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+          <span class="tl-title">Week 3, Recover and Recapture</span>
+          <span class="tl-status pending">Retargeting</span>
+        </div>
+        <div class="tl-body">Launch retargeting on cart and checkout abandoners, the biggest recoverable group. Add aggregate review stars to the buy box and a trust row to the checkout summary. Test protection-off by default and measure checkout completion.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+          <span class="tl-title">Week 4, Set Up the Rebuild</span>
+          <span class="tl-status pending">Creative</span>
+        </div>
+        <div class="tl-body">Produce the first batch of the two priority concepts. Stand up the weekly variant cadence and the brand-safe testing bar. Run a session-recording study on 1,000 product-page visitors to ground the next checkout test. Review the month against the benchmarks.</div>
+      </div>
+    </div>
+    <div>
+      <div class="card teal">
+        <h4>Thirty-Day KPI Benchmarks</h4>
+        <div style="display:flex;flex-direction:column;gap:14px;margin-top:14px;">
+          <div><div class="stat-label">Breakeven Floor</div><div class="stat-val" style="font-size:28px;">1.68x</div><div class="stat-sub">Do not scale below this</div></div>
+          <div><div class="stat-label">Phase One Target ROAS</div><div class="stat-val" style="font-size:28px;color:var(--teal);">2.0x +</div><div class="stat-sub">At current spend</div></div>
+          <div><div class="stat-label">Max Cost Per Purchase</div><div class="stat-val" style="font-size:28px;">110 USD</div><div class="stat-sub">Client breakeven CPA</div></div>
+          <div><div class="stat-label">Checkout Completion</div><div class="stat-val" style="font-size:28px;color:var(--teal);">52%</div><div class="stat-sub">From 39.3% today</div></div>
+          <div><div class="stat-label">Target AOV</div><div class="stat-val" style="font-size:28px;">210 USD +</div><div class="stat-sub">Via bundle default</div></div>
+          <div><div class="stat-label">Top-Funnel Match Quality</div><div class="stat-val" style="font-size:28px;">8 / 10</div><div class="stat-sub">From 6.4 today</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTION -->
+<section id="projection">
+  <div class="eyebrow">Twelve-Month Outlook</div>
+  <h2>What the Base Can Carry</h2>
+  <p style="max-width:780px;margin-bottom:32px;">A measured ramp, not a hockey stick. The model restores efficiency before adding spend, then scales budget roughly two and a half times across the year while holding ROAS at the 2.5x target. Figures are directional planning numbers, anchored to the validated account history and the conversion gains the CRO work is built to deliver.</p>
+
+  <table class="data-table" style="margin-bottom:20px;">
+    <thead>
+      <tr><th>Stage</th><th>Daily Spend</th><th>Target ROAS</th><th>Monthly Spend</th><th>Monthly Revenue</th><th>Focus</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Today</strong></td><td>3,000 USD</td><td><span class="roas-pill" style="background:rgba(245,166,35,0.15);color:var(--amber);">1.85x</span></td><td>90,000 USD</td><td>166,500 USD</td><td class="dim">Thin margin</td></tr>
+      <tr><td><strong>Month 1</strong></td><td>2,500 USD</td><td><span class="roas-pill" style="background:rgba(0,196,154,0.12);color:var(--teal);">2.0x</span></td><td>75,000 USD</td><td>150,000 USD</td><td>Stabilise</td></tr>
+      <tr><td><strong>Month 3</strong></td><td>3,000 USD</td><td><span class="roas-pill" style="background:rgba(0,196,154,0.12);color:var(--teal);">2.2x</span></td><td>90,000 USD</td><td>198,000 USD</td><td>Rebuild creative</td></tr>
+      <tr><td><strong>Month 6</strong></td><td>4,500 USD</td><td><span class="roas-pill" style="background:rgba(0,230,118,0.15);color:var(--green);">2.4x</span></td><td>135,000 USD</td><td>324,000 USD</td><td>Scale on proof</td></tr>
+      <tr><td><strong>Month 9</strong></td><td>6,000 USD</td><td><span class="roas-pill" style="background:rgba(0,230,118,0.15);color:var(--green);">2.5x</span></td><td>180,000 USD</td><td>450,000 USD</td><td>Seasonal push</td></tr>
+      <tr><td><strong>Month 12</strong></td><td>8,000 USD</td><td><span class="roas-pill" style="background:rgba(0,230,118,0.15);color:var(--green);">2.5x</span></td><td>240,000 USD</td><td>600,000 USD</td><td>Durable scale</td></tr>
+    </tbody>
+  </table>
+
+  <div class="grid-3">
+    <div class="stat-box"><div class="stat-val" style="color:var(--teal);">2.5x</div><div class="stat-label">Year-End Target ROAS</div><div class="stat-sub">From 1.85x today, on a stable base</div></div>
+    <div class="stat-box"><div class="stat-val" style="color:var(--teal);">2.7x</div><div class="stat-label">Daily Spend Growth</div><div class="stat-sub">3,000 to 8,000 dollars a day</div></div>
+    <div class="stat-box"><div class="stat-val" style="color:var(--teal);">600K</div><div class="stat-label">Month 12 Revenue, USD</div><div class="stat-sub">At the target efficiency</div></div>
+  </div>
+
+  <div class="highlight" style="margin-top:24px;">
+    <strong>The single biggest swing factor is checkout completion.</strong> The whole ramp assumes the cart and checkout leaks get fixed, because that is what turns the same traffic into more orders and lets spend scale without ROAS falling. If completion moves from 39.3 percent toward the low fifties, the efficiency targets are realistic. If it does not, every other gain is fighting uphill against the same leak. Fix the funnel first, and the media plan takes care of itself.
+  </div>
+</section>
+
+<!-- VERDICT -->
+<section id="verdict">
+  <div class="eyebrow">The Verdict</div>
+  <h2>A Strong Engine on a Thin Base</h2>
+
+  <div class="grid-3" style="margin-bottom:32px;">
+    <div class="card red">
+      <h4 style="color:var(--red);">The Problems</h4>
+      <ul class="check-list red" style="margin-top:10px;">
+        <li>Two compounding checkout-stage leaks waste the majority of paid traffic</li>
+        <li>Sixty two ad sets dilute the conversion signal and compress efficiency</li>
+        <li>Conviction creative loses most of its earned attention before the offer</li>
+      </ul>
+    </div>
+    <div class="card amber">
+      <h4 style="color:var(--amber);">The Risks</h4>
+      <ul class="check-list amber" style="margin-top:10px;">
+        <li>Top winners attack protected groups, a live account-restriction risk at scale</li>
+        <li>A direct clone undercuts on price while craft-led rivals press on credibility</li>
+        <li>The Rolex-homage design invites IP attention and counterfeits</li>
+      </ul>
+    </div>
+    <div class="card green">
+      <h4 style="color:var(--green);">The Foundations</h4>
+      <ul class="check-list green" style="margin-top:10px;">
+        <li>Tracking is healthy, with CAPI deduplicating and a 9 out of 10 purchase signal</li>
+        <li>A working three-engine creative system with a proven winning template</li>
+        <li>An efficient base period at 3.16x proves the unit economics work</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="verdict">
+    <div class="verdict-icon">EW</div>
+    <div class="verdict-body">
+      <h3>The Bottom Line</h3>
+      <p>Elior is not a failing account, it is a fast-scaled one that has outgrown its plumbing. The hard part, demand, is solved: the brand has a message that moves people, creative that wins and an efficient base proving the economics. What is missing is the discipline layer. <strong>Fix the two checkout leaks, consolidate the structure, and rebuild the creative onto a policy-safe base, in that order.</strong> Do that and the account restores its efficiency on the spend already running, then scales from roughly 3,000 dollars a day at a thin margin to a durable 2.5x at 8,000 dollars a day. The opportunity is real and it is recoverable with the levers already inside the business.</p>
+    </div>
+  </div>
+
+  <div style="text-align:center;margin-top:60px;padding-top:30px;border-top:1px solid var(--border);">
+    <div class="nav-diamond" style="margin:0 auto 12px;"></div>
+    <p style="font-family:'Syne',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);">Prepared by Your Marketing Partners</p>
+    <p style="font-size:12px;color:var(--muted2);margin-top:6px;">Meta Ads Performance and Scale Audit &nbsp;|&nbsp; Elior Watches &nbsp;|&nbsp; 1 June 2026</p>
+  </div>
+</section>
+
+</div>
+
+<script>
+  const links = document.querySelectorAll('.nav-link');
+  const sections = document.querySelectorAll('section[id]');
+  const byId = {};
+  links.forEach(l => { byId[l.getAttribute('href').slice(1)] = l; });
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        links.forEach(l => l.classList.remove('active'));
+        const link = byId[e.target.id];
+        if (link) link.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+  sections.forEach(s => obs.observe(s));
+</script>
+</body>
+</html>
